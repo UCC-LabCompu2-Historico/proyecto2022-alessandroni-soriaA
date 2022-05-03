@@ -7,6 +7,8 @@ Estructura de Proyecto Lab de Compu II - 2022
 Nuestra página trata sobre una página de turismo que ayuda a los viajeros a decidir el destino y les sugiere distintos destinos dependiendo de sus intereses.
 Lo hicimos en html5 y css3. Nuestros nombres son Ornella y Julieta. El título el "Travel with us"
 
+<a href= "index.html"> Link a página <a>
+
 
 ### Sobre el Repositorio
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
