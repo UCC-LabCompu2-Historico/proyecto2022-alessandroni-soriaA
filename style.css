@@ -1,0 +1,210 @@
+
+.div1{
+    background-image: url(imagenes/primer_fondo.jpg);
+    background-repeat: no-repeat; background-size: cover;
+} /* Imagen del membrete LISTO*/
+.lineaRecta{
+    border-top: 2px solid grey;
+} /* Linea membrete LISTO*/
+.lineaPunteada{
+    border-top: 1px dashed grey;
+} /* Linea membrete LISTO*/
+.tituloDePagina{
+    font-family: Rockwell;
+    display: inline-block;
+    text-align: center;
+    vertical-align: 100%;
+    color: rgb(28, 49, 68);
+    text-shadow: 1px 1px 30px rgb(255, 255, 255), 2px 5px 2px rgb(177, 176, 176);
+} /* Título de la página LISTO*/
+
+.divisionImagen{
+    display: inline-block;
+    height:320px;
+    width:575px;
+} /* division de cada imagen LISTO*/
+
+h1 {
+    color: #375995;
+    font-size: 400%;
+    font-family: "Britannic Bold";
+}
+
+.contenedor-botones {
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 30px 20% 25px;
+
+}
+
+.boton-uno {
+
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    color: #000000;
+    font-family: "Britannic Bold", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+.boton-uno::after {
+
+    content: "";
+    width: 100%;
+    height: 80px;
+    background-color: #c45890;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+
+
+
+}
+
+.boton-uno:hover::after {
+    top: 0;
+
+}
+
+.boton-uno span {
+
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-dos {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    color: #000000;
+    font-family: "Britannic Bold", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.boton-dos::after {
+
+    content: "";
+    width: 100%;
+    height: 80px;
+    background-color: #c45890;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+
+
+
+}
+
+.boton-dos:hover::after {
+    top: 0;
+
+}
+
+.boton-dos span {
+
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.videosyou {
+
+
+    width: 80%;
+    margin: 0 20% 25px;
+
+
+}
+
+.pregunta {
+
+    font-family: "Roboto Light";
+    text-align: center;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#f264d7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+
+}
+
+.form{
+    background: pink;
+    margin: 0px 20% 0px;
+    width: 90%;
+    max-width: 400px;
+    padding: 0px 200px 0px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+    display: grid;
+}
+
+.form .input {
+
+    width: auto;
+    background: snow;
+    color: #c45890;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: #c45890 solid;
+    font-family: "Roboto Light";
+}
+
+.videosyou iframe{
+    display: inline-block;
+    width=100% height=50%;
+}
+.footer{
+    font-family: Rockwell;
+    text-align: left;
+    font-size: 70%;
+}
+.footer span{
+    display: inline-block;
+}
+.lineaRecta{
+    border-top: 2px solid grey;
+} /* Linea membrete LISTO*/
+.lineaPunteada{
+    border-top: 1px dashed grey;
+} /* Linea membrete LISTO*/

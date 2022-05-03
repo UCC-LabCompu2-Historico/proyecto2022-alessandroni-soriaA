@@ -1,0 +1,119 @@
+body {
+    background-color: hsl(214, 100%, 93%);
+}
+.titulo { 
+    font-family: Rockwell; 
+    color: #ffffff; 
+    font-size: 30px; 
+    text-align: center;
+    background: #ff94df; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 10px; 
+    border-radius: 35px 50px 35px 50px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    text-shadow: 2px 2px 10px rgb(194, 194, 194);
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+} /* Titulo de los conjuntos LISTO*/
+.div1{
+    background-image: url(imagenes/primer_fondo.jpg); 
+    background-repeat: no-repeat; background-size: cover;
+} /* Imagen del membrete LISTO*/
+.lineaRecta{
+    border-top: 2px solid grey;
+} /* Linea membrete LISTO*/
+.lineaPunteada{
+    border-top: 1px dashed grey;
+} /* Linea membrete LISTO*/
+.tituloDePagina{
+    font-family: Rockwell;
+    display: inline-block; 
+    vertical-align: 100%; 
+    color: rgb(28, 49, 68); 
+    text-shadow: 1px 1px 30px rgb(255, 255, 255), 2px 5px 2px rgb(177, 176, 176);
+} /* Título de la página LISTO*/
+
+.divisionImagen{
+    display: inline-block;
+    height:320px;
+    width:575px;
+} /* division de cada imagen LISTO*/
+
+.imagen{
+    height:320px;
+    width:575px;
+} 
+
+.nombreDestino{
+    font-family: Rockwell;
+    vertical-align: 100%; 
+    color: rgb(28, 49, 68); 
+    text-shadow: 1px 1px 30px rgb(255, 255, 255), 2px 5px 2px rgb(177, 176, 176); 
+    text-align: center;
+} /* formato texto imagenes LISTO*/
+
+.divisionImagen figure{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.divisionImagen figure .divisionTexto{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    text-align: center;
+}
+.divisionImagen figure:hover > .divisionTexto{
+    opacity: 1;
+    visibility: visible;
+}
+.divisionImagen figure:hover > img{
+    transform: scale(1.3);
+    transition: all 400ms ease-out;
+}
+.divisionImagen figure:hover > .divisionTexto h3{
+    margin-top:25%;
+    margin-bottom:50%;
+    font-size: 200%;
+    transition: all 500ms ease-out;
+}
+.divisionImagen figure .divisionTexto h3{
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.volver{
+        background: #74a6d4; 
+        margin: 0 42% 25px; 
+        overflow: hidden; 
+        padding: 0px 60px; 
+        border-radius: 0px 50px 0px 50px; 
+        -moz-border-radius: 0px 35px 0px 35px; 
+        -webkit-border-radius: 10px 10px 10px 10px; 
+        text-shadow: 2px 2px 10px rgb(194, 194, 194);
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
+}
+.volver h1{
+        font-family: Rockwell; 
+        color: #ffffff; 
+        font-size: 150%; 
+        text-align: center;
+}
+.footer{
+    font-family: Rockwell;
+    text-align: left;
+    font-size: 70%;
+}
+.footer span{
+    display: inline-block;
+}
