@@ -3,6 +3,10 @@ Estructura de Proyecto Lab de Compu II - 2022
 
 ## Requisitos del Primer Parcial
 
+
+Nuestra página trata sobre una página de turismo que ayuda a los viajeros a decidir el destino y les sugiere distintos destinos dependiendo de sus intereses.
+
+
 ### Sobre el Repositorio
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
