@@ -1,30 +1,28 @@
-# proyecto2022
-Estructura de Proyecto Lab de Compu II - 2022
+SIGHTSEEING THE WORLD W US!
 
-## Requisitos del Primer Parcial
+Nuestra página ayuda a los viajeros a decidir el destino y les sugiere distintas alternativas dependiendo de sus intereses.
+Lo hicimos en html5 y css3. Nuestros nombres son Ornella Alessandroni y Julieta Soria. El título es "Travel with us"
 
+<a href= "https://ucc-labcompu2.github.io/proyecto2022-alessandroni-soriaA/"> Link a página<a>
 
-Nuestra página trata sobre una página de turismo que ayuda a los viajeros a decidir el destino y les sugiere distintos destinos dependiendo de sus intereses.
-Lo hicimos en html5 y css3. Nuestros nombres son Ornella y Julieta. El título el "Travel with us"
-
-<a href= "https://ucc-labcompu2.github.io/proyecto2022-alessandroni-soriaA/"> Link a página <a>
+Dentro de nuestra página principal podrán encontrar videos de viajes, información sobre nosotras y dos opciones para continuar, ver todos los destinos disponibles o nuestro test para que nosotras te sugiramos un destino acorde a tus gustos.
 
 
 ### Sobre el Repositorio
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
-- [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
-- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups/Wireframes). Es importante que contenga SKETCH y MOCKUP/WIREFRAME (debe estar en formato: PDF, PNG o JPG).
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
-- [ ] Publicar la Web empleando GitHubPages
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
+- [x] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
+- [x] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
+- [x] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups/Wireframes). Es importante que contenga SKETCH y MOCKUP/WIREFRAME (debe estar en formato: PDF, PNG o JPG).
+- [x] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
+- [x] Publicar la Web empleando GitHubPages
+- [x] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
 ### Sobre el Proyecto General
-- [ ] La página principal debe llamarse index
+- [x] La página principal debe llamarse index
 - [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] Se debe emplear algún favicon
+- [x] Se debe emplear algún favicon
 - [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
-- [ ] Debe haber navegación entre todas las páginas
+- [x] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
 - [ ] Todas las etiquetas deben estar en minúscula
