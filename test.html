@@ -9,57 +9,36 @@
     <script type="text/javascript" src="/js/test.js"></script>
 </head>
 <body>
-    <form action="/resultadoTest.html" method="get">
-        <label for="motivo"> Motivo del viaje:</label>
-        <input type="radio" id="motivo" name="placer"
-    </form>
-        <!-- <form class="form">
-            <h2 class="form_title">COMENZA YA</h2>
-                <div class="form_container">
-                    <div class="form_group">
-                        <label>
-                            <label for="Motivo_del_viaje:" class="form_label">  Motivo: </label>
-                            <input type="radio" id="Motivo_del_viaje" name="motivo" value="POR PLACER" class="form_input" placeholder=" "> POR PLACER
-                            <br>
-                            <input type="radio" id="Motivo_del_viaje" name="motivo" value="POR NEGOCIOS" class="form_input" placeholder=" "> POR NEGOCIOS
-                            <br>
-                            <input type="radio" id="Motivo_del_viaje" name="motivo" value="VOLUNTARIADO" class="form_input" placeholder=" "> VOLUNTARIADO
-                            <br>
-                            <span class="form_line"></span>
-                        </label>
-                        <label>
-                            <input type="radio" id="Cantidad_dias" name="dias" value="MENOS DE 5 (CINCO) DÍAS" class="form_input" placeholder=" "> MENOS DE 5 (CINCO) DÍAS
-                            <br>
-                            <input type="radio" id="Cantidad_dias" name="dias" value="ENTRE 5 (CINCO) Y 10 (DIEZ) DÍAS" class="form_input" placeholder=" "> ENTRE 5 (CINCO) Y 10 (DIEZ) DÍAS
-                            <br>
-                            <input type="radio" id="Cantidad_dias" name="dias" value="MÁS DE 10 (DIEZ) DÍAS" class="form_input" placeholder=" "> MÁS DE 10 (DIEZ) DÍAS
-                            <br>
-                            <label for="Motivo_del_viaje:" class="form_label">  Motivo: </label>
-                            <br>
-                            <span class="form_line"></span>
-                        </label>
-                        <label>
-                            <input type="radio" id="Motivo_del_viaje" name="motivo" value="POR PLACER" class="form_input" placeholder=" "> POR PLACER
-                            <br>
-                            <input type="radio" id="Motivo_del_viaje:" name="motivo" value="POR NEGOCIOS" class="form_input" placeholder=" "> POR NEGOCIOS
-                            <br>
-                            <input type="radio" id="Motivo_del_viaje: del viaje:" name="motivo" value="VOLUNTARIADO" class="form_input" placeholder=" "> VOLUNTARIADO
-                            <br>
-                            <label for="Motivo_del_viaje:" class="form_label">  Motivo: </label>
-                            <br>
-                            <span class="form_line"></span>
-                        </label>
-                    </div>
-
-
-
-
-                    <input type="submit" class="form_submit" value="ENVIAR" >
-
-                </div>
-
-
-        </form> -->
+    <!--<label for="motivo"> Motivo del viaje:
+        <input type="radio" id="motivo" name="Motivo" value="placer" > Por placer
+        <br>
+        <input type="radio" id="motivo" name="Motivo" value="negocios"> Por negocios
+        <br>
+        </label>
+        <label for="personas"> Va a viajar solo, con amigos o con familia o pareja</label>
+        <input type="radio" id="personas" name="amigos" value="amigos"> Con amigos
+        <br>
+        <input type="radio" id="personas" name="familia" value="familia"> Con familia o pareja
+        <br>
+        <input type="radio" id="personas" name="solo" value="solo"> Solo
+    </form> -->
+    <form class="form" action="/resultadoTest.html" method="get">
+        <h2 class="form_title">COMENZA YA</h2>
+        <div class="form_container">
+            <div class="form_group">
+                <h3>Motivo del viaje: </h3>
+                <label for="Placer">
+                    <input type="radio" id="Placer" name="Motivo" value="placer" > Por placer
+                    <br>
+                </label>
+                <label for="Negocios">
+                    <input type="radio" id="Negocios" name="Motivo" value="negocios"> Por negocios
+                    <br>
+                </label>
+            </div>
+            <input type="submit" class="form_submit" value="ENVIAR" >
+        </div>
+    </form> -->
     <div>
         <button title="Volver" class="volver">
             <a href="index.html">
