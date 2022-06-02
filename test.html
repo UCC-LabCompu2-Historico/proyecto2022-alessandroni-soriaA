@@ -9,36 +9,49 @@
     <script type="text/javascript" src="/js/test.js"></script>
 </head>
 <body>
-    <!--<label for="motivo"> Motivo del viaje:
-        <input type="radio" id="motivo" name="Motivo" value="placer" > Por placer
-        <br>
-        <input type="radio" id="motivo" name="Motivo" value="negocios"> Por negocios
-        <br>
-        </label>
-        <label for="personas"> Va a viajar solo, con amigos o con familia o pareja</label>
-        <input type="radio" id="personas" name="amigos" value="amigos"> Con amigos
-        <br>
-        <input type="radio" id="personas" name="familia" value="familia"> Con familia o pareja
-        <br>
-        <input type="radio" id="personas" name="solo" value="solo"> Solo
-    </form> -->
     <form class="form" action="/resultadoTest.html" method="get">
         <h2 class="form_title">COMENZA YA</h2>
         <div class="form_container">
             <div class="form_group">
                 <h3>Motivo del viaje: </h3>
-                <label for="Placer">
+                <label for="Placer" class="opciones">
                     <input type="radio" id="Placer" name="Motivo" value="placer" > Por placer
                     <br>
                 </label>
-                <label for="Negocios">
+                <label for="Negocios" class="opciones">
                     <input type="radio" id="Negocios" name="Motivo" value="negocios"> Por negocios
                     <br>
                 </label>
+                <h3>¿Viaja solo?</h3>
+                <label for="Solo" class="opciones">
+                    <input type="radio" id="Solo" name="personas" value="solo" > Si, viajo solo
+                    <br>
+                </label>
+                <label for="Familia" class="opciones">
+                    <input type="radio" id="Familia" name="personas" value="familia"> No, viajo con mi familia o con mi pareja
+                    <br>
+                </label>
+                <label for="Amigos" class="opciones">
+                    <input type="radio" id="Amigos" name="personas" value="amigos"> No, viajo con mis amigos
+                    <br>
+                </label>
+                <h3>¿Quiere destinos económicos o turísticos?</h3>
+                <label for="Economicos" class="opciones">
+                    <input type="radio" id="Economicos" name="precio" value="economicos" >Destinos económicos 
+                    <br>
+                </label>
+                <label for="Equilibrados" class="opciones">
+                    <input type="radio" id="Equilibrados" name="precio" value="equilibrados"> No, viajo con mi familia o con mi pareja
+                    <br>
+                </label>
+                <label for="Turisticos" class="opciones">
+                    <input type="radio" id="Turisticos" name="precio" value="turisticos">Prefiero destinos turísticos
+                    <br>
+                </label>
             </div>
-            <input type="submit" class="form_submit" value="ENVIAR" >
+            <input type="submit" class="form_submit" value="Enviar respuestas" > 
         </div>
-    </form> -->
+    </form>
     <div>
         <button title="Volver" class="volver">
             <a href="index.html">
