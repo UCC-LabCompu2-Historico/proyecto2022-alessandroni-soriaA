@@ -1,77 +1,50 @@
-var imagen = new Image();
-var direccion;
-var velocidad;
+x=40;
+y=40;
 
-imagen.src= imagenes/Panoramica.png;
+function dibujarImagen (x, y) {
 
-var CanvassizeX = 800;
-var CanvassizeY = 300;
-var velocidad = 40;
-var scale = 1.05;
-var y = -4.5;
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
 
-var dx = 0.75;
-var imgW;
-var imgH;
+    console.log(x, y);
 
-var x= 0;
-var clearX;
-var clearY;
+    var img = new Image();
+    img.src = "imagenes/avion1.png";
 
-var ctx;
+    canvas.width = canvas.width;
 
-imagen.onload = function () {
+    img.onload = function () {
 
-    imgW = imagen.width * scale;
-    imgH = imagen.height * scale;
+        ctx.drawImage(img, x, y);
 
-    if (imgW > CanvassizeX) {
-        x = CanvassizeX - imgW;
     }
 
-    if (imgW > CanvassizeX) {
-        clearX = imgW;
-    } else {
-        clearX = CanvassizeX;
-    }
-
-    if ( imgH > CanvassizeY) {
-        clearY = imgH;
-    } else {
-        clearY = CanvassizeY;
-    }
-    ctx = document.getElementById('myCanvas').getContext('2d');
-    return setInterval(draw, velocidad);
 }
 
-function draw () {
-    ctx.clearRect(0, 0, clearX, clearY );
-    if (imgW <= CanvassizeX) {
-        if ( x > CanvassizeX) {
-            x = -imgW + x;
-        }
 
-        if (x > 0) {
-            ctx.drawImage(Imagen, -imgW+x, y, imgW, imgH);
-        }
+x=0;
+dx=2; //como se va a ir moviendo
 
-        if (x - imgW > 0) {
-            ctx.drawImage (Imagen, -imgW*2 + x, y, imgW, imgH);
-        }
+function animarAvion () {
+
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    canvas.width = canvas.width;
+
+    var img = new Image();
+    img.src = "imagenes/avion1.png";
+
+    img.onload = function () {
+
+        ctx.drawImage(img, x, 100);
+
     }
 
-    else {
-        // reiniciar, comenzar desde el principio
-        if (x > (CanvassizeX)) {
-            x = CanvassizeX - imgW;
-        }
-        // dibujar image adicional
-        if (x > (CanvassizeX-imgW)) {
-            ctx.drawImage(Imagen, x - imgW + 1, y, imgW, imgH);
-        }
+    if (x>canvas.width) {
+
+        x=0;
     }
-    // dibujar imagen
-    ctx.drawImage(Imagen, x, y,imgW, imgH);
-    // cantidad para moverse
-    x += dx;
+
+    x = x + dx;
 }

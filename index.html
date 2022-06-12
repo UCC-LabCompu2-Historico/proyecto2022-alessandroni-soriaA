@@ -7,7 +7,9 @@
     <link rel="icon" href="imagenes/icono_title.png" type="image/x-icon" alt="logo pagina" width="120" height="120" title="TRAVEL WITH US">
     <script type="text/javascript" src="/js/index.js"></script>
 </head>
-<body id="body">
+
+<body id="body" onload="setInterval(animarAvion, 15)">
+
 <main>
     <div class="div1"> <!--Parte de arriba-->
         <hr class="lineaRecta">
@@ -46,9 +48,15 @@
             <iframe src="https://www.youtube.com/embed/NBs0RnKnNTE?list=PLzrSDlTJSNWDe48XV_6AIhuFxL6P-ySdi&t=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-    <canvas id="myCanvas" class="canv" width="800 px" height="300 px"> </canvas>
+
     <hr class="lineaPunteada"/>
 </main>
+
+
+<canvas id="myCanvas" class="canvas" width="2000 px" height="400 px" onload="dibujarImagen()">
+
+</canvas>
+
 
 <footer>
     <div class="footer">
