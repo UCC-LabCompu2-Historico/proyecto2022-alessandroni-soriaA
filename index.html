@@ -5,10 +5,10 @@
     <title>TravelWithUS</title>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="imagenes/icono_title.png" type="image/x-icon" alt="logo pagina" width="120" height="120" title="TRAVEL WITH US">
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="js\index.js"></script>
 </head>
 
-<body id="body" onload="setInterval(animarAvion, 15)">
+<body id="body" onload="setInterval(animarAvion, 15)" onload="setInterval(draw, 30)">
 
 <main>
     <div class="div1"> <!--Parte de arriba-->
@@ -23,10 +23,12 @@
     </div> <!--Fin parte de arriba-->
     <br/><br/>
 
-    <form class="form" action="">
+    <form class="form" action="" name="pais">
         <h2>¿A DONDE TE GUSTARIA VIAJAR?</h2>
         <div class="input"> 
-            <input type="text" placeholder="Ingrese un destino"> <br> 
+            <input type="text" id="Destino" placeholder="Ingrese un destino">
+            <br>
+            <button type="button" onclick="Destino()">GO!</button>
         </div>
 
     </form>
@@ -39,6 +41,10 @@
     <div class="tituloVideosYoutube">
         <h2>Podes viajar a cualquiera de estos hermosos destinos</h2>
     </div>
+
+    <canvas id="myCanvas1" width="800 px" height="300 px" onload="hacerPanorama()" onload="draw()"> </canvas>
+
+
 
     <div class="videosyoutube">
         <div class="videoyou1">
@@ -53,7 +59,7 @@
 </main>
 
 
-<canvas id="myCanvas" class="canvas" width="2000 px" height="400 px" onload="dibujarImagen()">
+<canvas id="myCanvas2" class="canvas" width="2000 px" height="400 px" onload="dibujarImagen()">
 
 </canvas>
 
