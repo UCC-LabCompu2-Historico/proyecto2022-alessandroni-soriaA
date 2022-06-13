@@ -40,7 +40,7 @@
 </header>
 <main>
     <div id="barraBusqueda" onclick="buscador_interno()">
-        <input type="text" id="inputBusqueda" placeholder="¿A dónde queres viajar?" onkeyup="buscador_interno()">
+        <input type="search" id="inputBusqueda" placeholder="¿A dónde queres viajar?" onkeyup="buscador_interno()" pattern="[0-9]{5,7}" title="Ingrese una ciudad disponible, por ejemplo Roma" required>
     </div>
 
     <ul id="cajaBusqueda">
