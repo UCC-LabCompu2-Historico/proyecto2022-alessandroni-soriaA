@@ -128,12 +128,20 @@ function dibujarImagen (x, y) {
 
 }
 
+<<<<<<< HEAD
 x=0;
 dx=2; //como se va a ir moviendo
 
 function animarAvion () {
 
     var canvas = document.getElementById("myCanvas2");
+=======
+var x=0;
+var dx=2; //como se va a ir moviendo
+
+function animarAvion () {
+    var canvas = document.getElementById("myCanvas");
+>>>>>>> 3570c2c50dcb9bf4ad03d639deb929c4ed533ee2
     var ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
@@ -142,19 +150,17 @@ function animarAvion () {
     img.src = "imagenes/avion1.png";
 
     img.onload = function () {
-
         ctx.drawImage(img, x, 100);
-
     }
 
     if (x>canvas.width) {
-
         x=0;
     }
 
     x = x + dx;
 }
 
+<<<<<<< HEAD
 function verificarRtas () {
 
     var total = 3;
@@ -213,3 +219,14 @@ function verificarRtas () {
 
     }
 
+=======
+function Destino() {
+    var pais = document.getElementById("Destino").value;
+
+    var url;
+
+    console.log(pais);
+    url = "Cancun.html";
+    window.open(url);
+}
+>>>>>>> 3570c2c50dcb9bf4ad03d639deb929c4ed533ee2
