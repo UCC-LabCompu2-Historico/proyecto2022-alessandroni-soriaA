@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function hacerPanorama () {
 
     var canvas = document.getElementById("myCanvas1");
@@ -102,6 +103,10 @@ function hacerPanorama () {
 
 x=40;
 y=40;
+=======
+var x=40;
+var y=40;
+>>>>>>> 373a836e0596f3790e7e36e9d2a76e8fa615f198
 
 function dibujarImagen (x, y) {
 
