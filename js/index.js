@@ -1,5 +1,5 @@
-x=40;
-y=40;
+var x=40;
+var y=40;
 
 function dibujarImagen (x, y) {
 
