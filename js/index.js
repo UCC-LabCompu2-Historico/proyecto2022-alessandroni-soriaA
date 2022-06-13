@@ -100,8 +100,8 @@ function hacerPanorama () {
 }
 
 
-x=40;
-y=40;
+var x=40;
+var y=40;
 
 function dibujarImagen (x, y) {
 
@@ -123,8 +123,8 @@ function dibujarImagen (x, y) {
 
 }
 
-x=0;
-dx=2; //como se va a ir moviendo
+var x=0;
+var dx=2; //como se va a ir moviendo
 
 function animarAvion () {
 
