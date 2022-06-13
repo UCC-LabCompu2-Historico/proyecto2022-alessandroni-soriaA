@@ -1,10 +1,3 @@
-document.getElementById("iconoMenu").addEventListener("click", mostrar_menu);
-
-function mostrar_menu(){
-
-    document.getElementById("moverContenido").classList.toggle('moverTodoContenido');
-    document.getElementById("mostrarMenu").classList.toggle('mostrarLateral');
-}
 
 document.getElementById("iconoBusqueda").addEventListener("click", mostrar_buscador);
 document.getElementById("contenedorBusqueda").addEventListener("click", ocultar_buscador);
@@ -39,7 +32,7 @@ function ocultar_buscador(){
 
 //Filtrado de busqueda
 
-document.getElementById("inputBusqueda").addEventListener("keyup", buscador_interno);
+document.getElementById("inputBusqueda").addEventListener("click", buscador_interno);
 
 function buscador_interno(){
     filter = inputBusqueda.value.toUpperCase();

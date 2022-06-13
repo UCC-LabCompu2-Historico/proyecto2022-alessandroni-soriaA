@@ -235,7 +235,7 @@ h1 {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    margin: 3% 18% 7%;
+    margin: 10% 18% 7%;
 }
 
 .boton-uno {
