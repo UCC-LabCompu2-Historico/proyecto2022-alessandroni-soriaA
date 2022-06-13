@@ -20,10 +20,12 @@
         <hr class="lineaRecta">
     </div> <!--Fin parte de arriba-->
     <br/><br/>
-    <form class="form" action="/resultadoTest.html" method="get">
+    <form class="form" action="/resultadoTest.html" method="get" name="test" onsubmit="return verificarRtas ()">
+
         <h2 class="form_title">COMENZA YA</h2>
         <div class="form_container">
             <div class="form_group">
+
                 <h3>Motivo del viaje: </h3>
                 <label for="Placer" class="opciones">
                     <input type="radio" id="Placer" name="Motivo" value="placer" > Por placer
@@ -33,6 +35,7 @@
                     <input type="radio" id="Negocios" name="Motivo" value="negocios"> Por negocios
                     <br>
                 </label>
+
                 <h3>¿Viaja solo?</h3>
                 <label for="Solo" class="opciones">
                     <input type="radio" id="Solo" name="personas" value="solo" > Si, viajo solo
@@ -46,21 +49,19 @@
                     <input type="radio" id="Amigos" name="personas" value="amigos"> No, viajo con mis amigos
                     <br>
                 </label>
+
                 <h3>¿Quiere destinos económicos o turísticos?</h3>
                 <label for="Economicos" class="opciones">
                     <input type="radio" id="Economicos" name="precio" value="economicos" >Destinos económicos 
                     <br>
                 </label>
-                <label for="Equilibrados" class="opciones">
-                    <input type="radio" id="Equilibrados" name="precio" value="equilibrados"> No, viajo con mi familia o con mi pareja
-                    <br>
-                </label>
+
                 <label for="Turisticos" class="opciones">
                     <input type="radio" id="Turisticos" name="precio" value="turisticos">Prefiero destinos turísticos
                     <br>
                 </label>
             </div>
-            <input type="submit" class="form_submit" value="Enviar respuestas" > 
+            <input type="submit" class="form_submit" value="Enviar respuestas">
         </div>
     </form>
     
