@@ -1,3 +1,72 @@
+document.getElementById("iconoMenu").addEventListener("click", mostrar_menu);
+
+function mostrar_menu(){
+
+    document.getElementById("moverContenido").classList.toggle('moverTodoContenido');
+    document.getElementById("mostrarMenu").classList.toggle('mostrarLateral');
+}
+
+document.getElementById("iconoBusqueda").addEventListener("click", mostrar_buscador);
+document.getElementById("contenedorBusqueda").addEventListener("click", ocultar_buscador);
+
+barraBusqueda =  document.getElementById("barraBusqueda");
+contenedorBusqueda =  document.getElementById("contenedorBusqueda");
+inputBusqueda =       document.getElementById("inputBusqueda");
+cajaBusqueda =        document.getElementById("cajaBusqueda");
+
+function mostrar_buscador(){
+
+    barraBusqueda.style.top = "80px";
+    contenedorBusqueda.style.display = "block";
+    inputBusqueda.focus();
+
+    if (inputBusqueda.value === ""){
+        cajaBusqueda.style.display = "none";
+    }
+
+}
+
+//Funcion para ocultar el buscador
+function ocultar_buscador(){
+
+    barraBusqueda.style.top = "-10px";
+    contenedorBusqueda.style.display = "none";
+    inputBusqueda.value = "";
+    cajaBusqueda.style.display = "none";
+
+}
+
+
+//Filtrado de busqueda
+
+document.getElementById("inputBusqueda").addEventListener("keyup", buscador_interno);
+
+function buscador_interno(){
+    filter = inputBusqueda.value.toUpperCase();
+    li = cajaBusqueda.getElementsByTagName("li");
+
+    //Recorriendo elementos a filtrar mediante los "li"
+    for (i = 0; i < li.length; i++){
+
+        a = li[i].getElementsByTagName("a")[0];
+        textValue = a.textContent || a.innerText;
+
+        if(textValue.toUpperCase().indexOf(filter) > -1){
+
+            li[i].style.display = "";
+            cajaBusqueda.style.display = "block";
+
+            if (inputBusqueda.value === ""){
+                cajaBusqueda.style.display = "none";
+            }
+
+        }else{
+            li[i].style.display = "none";
+        }
+
+    }
+}
+
 function hacerPanorama () {
 
     var canvas = document.getElementById("myCanvas1");

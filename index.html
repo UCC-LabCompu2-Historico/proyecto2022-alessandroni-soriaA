@@ -5,45 +5,64 @@
     <title>TravelWithUS</title>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="imagenes/icono_title.png" type="image/x-icon" alt="logo pagina" width="120" height="120" title="TRAVEL WITH US">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js\index.js"></script>
 </head>
 
 <body id="body" onload="setInterval(animarAvion, 15)" onload="setInterval(draw, 30)">
-
-<main>
+<header>
     <div class="div1"> <!--Parte de arriba-->
-        <hr class="lineaRecta">
-        <hr class="lineaPunteada">
-        <a href="index.html"> <!-- Agregar despues url de pagina de inicio-->
-            <img src="imagenes/logo.png" alt="logo avion" width="130" height="125" title="Travel with us">
-        </a>
-        <h1 style="display: inline-block; vertical-align: 30%"> SIGHTSEEING THE WORLD W US! </h1>
-        <hr class="lineaPunteada">
-        <hr class="lineaRecta">
-    </div> <!--Fin parte de arriba-->
-    <br/><br/>
-
-    <form class="form" action="/resultadoBusqueda.html" name="pais" target="_blank">
-        <h2>¿A DONDE TE GUSTARIA VIAJAR?</h2>
-        <div class="input"> 
-            <input type="search" id="Destino" placeholder="Ingrese un destino" list="paises">
-            <br>
-            <input type="submit" value="GO!"></button> 
+        <div class="logo">
+            <a href="index.html"> <!-- Agregar despues url de pagina de inicio-->
+            <img src="imagenes/logo.png" alt="logo avion" class="imgLogo" title="Travel with us">
+            </a>
+            <h1 style="display: inline-block; vertical-align: 30%"> SIGHTSEEING THE WORLD W US! </h1>
         </div>
-    </form>
-    <datalist id="paises">
-        <option value="Cancun"></option>
-        <option value="Dubai"></option>
-        <option value="Londres"></option>
-        <option value="Madrid"></option>
-        <option value="Munich"></option>
-        <option value="Mykonos"></option>
-        <option value="New York"></option>
-        <option value="Paris"></option>
-        <option value="Roma"></option>
-        <option value="Tokyo"></option>
-      </datalist>
+        <div class="menu" id="mostrarMenu">
+            <nav>
+                <ul>
+                    <li class="paginaSeleccionada"><a href="index.html" class="textoSeleccionado"> 
+                        <i class="index"></i> Inicio</a>
+                    </li>
+                    <li><a href="destinos.html"> 
+                        <i class="destinos"> </i>Destinos</a>
+                    </li>
+                    <li><a href="test.html"> 
+                        <i class="test"></i>Test</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contenedorIconoBuscar">
+            <i class="fas fa-search" id="iconoBusqueda"></i>
+        </div>
+    </div>
+    <div id="iconoMenu">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+<main>
+    <div id="barraBusqueda">
+        <input type="text" id="inputBusqueda" placeholder="¿A dónde queres viajar?">
+    </div>
 
+    <ul id="cajaBusqueda">
+        <li><a href="Cancun.html"><i class="busqueda"></i>Cancun</a></li>
+        <li><a href="Dubai.html"><i class="busqueda"></i>Dubai</a></li>
+        <li><a href="Londres.html"><i class="busqueda"></i>Londres</a></li>
+        <li><a href="Madrid.html"><i class="busqueda"></i>Madrid</a></li>
+        <li><a href="Munich.html"><i class="busqueda"></i>Munich</a></li>
+        <li><a href="Mykonos.html"><i class="busqueda"></i>Mykonos</a></li>
+        <li><a href="NewYork.html"><i class="busqueda"></i>New York</a></li>
+        <li><a href="Paris.html"><i class="busqueda"></i>Paris</a></li>
+        <li><a href="Roma.html"><i class="busqueda"></i>Roma</a></li>
+        <li><a href="Tokyo.html"><i class="busqueda"></i>Tokyo</a></li>
+    </ul>
+
+    <div id="contenedorBusqueda"></div>
+
+<div class="contenedorTodo" id="moverContenido">
+    
     <div class="contenedor-botones">
         <a  href="test.html" target="self"> <button class="boton-uno"> <span><strong> PROBA NUESTRO TEST </strong></span> </button></a>
         <a  href="destinos.html" target="_self"> <button class="boton-dos"><span> <strong>MIRA LOS DESTINOS DISPONIBLES </strong> </span>  </button> </a>
@@ -84,5 +103,6 @@
       </ul>
     </div>
 </footer>
+</div>
 </body>
 </html>
