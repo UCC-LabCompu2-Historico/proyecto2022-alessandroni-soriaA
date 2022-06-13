@@ -1,4 +1,3 @@
-
 document.getElementById("iconoBusqueda").addEventListener("click", mostrar_buscador);
 document.getElementById("contenedorBusqueda").addEventListener("click", ocultar_buscador);
 
@@ -32,7 +31,7 @@ function ocultar_buscador(){
 
 //Filtrado de busqueda
 
-document.getElementById("inputBusqueda").addEventListener("click", buscador_interno);
+document.getElementById("inputBusqueda").addEventListener("keyup", buscador_interno);
 
 function buscador_interno(){
     filter = inputBusqueda.value.toUpperCase();
@@ -56,7 +55,6 @@ function buscador_interno(){
         }else{
             li[i].style.display = "none";
         }
-
     }
 }
 
@@ -69,7 +67,7 @@ function hacerPanorama () {
 
     var image = new Image();
 
-    image.src = "Imagenes/panoramica.png";
+    image.src = "imagenes/panoramica.png";
 
     var CanvassizeX = 800;
     var CanvassizeY = 300;
