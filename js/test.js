@@ -2,20 +2,32 @@ const miForm = document.getElementById("test");
 const botonResul = document.getElementById("botonResul");
 const resultadoTest = document.getElementById("resultado");
 
-var motivo = document.getElementById("motivo").value;
-var placer = document.getElementById("Placer").value;
-var negocios = document.getElementById("Negocios").value;
-
-var personas = document.getElementById("personas").value;
-var solo = document.getElementById("Solo").value;
-var familia = document.getElementById("Familia").value;
-var amigos = document.getElementById("Amigos").value;
-
-var precio = document.getElementById("precio").value;
-var economicos = document.getElementById("Economicos").value;
-var turisticos = document.getElementById("Turisticos").value;
-
 var arreglo = [motivo, personas, precio];
+
+var motivo = document.getElementById("motivo");
+document.getElementById("Placer").addEventListener("click", motivoPlacer);
+document.getElementById("Negocios").addEventListener("click", motivoNegocios);
+
+function motivoPlacer() {
+    motivo = 1
+}
+
+function motivoNegocios() {
+    motivo = 2
+}
+
+
+var personas = document.getElementById("personas");
+var solo = document.getElementById("Solo");
+var familia = document.getElementById("Familia");
+var amigos = document.getElementById("Amigos");
+
+var precio = document.getElementById("precio");
+var economicos = document.getElementById("Economicos");
+var turisticos = document.getElementById("Turisticos");
+
+console.log(arreglo);
+
 
 function asignaValores() {
     var total = 3;
@@ -27,9 +39,9 @@ function asignaValores() {
             return false;
         } else {
             if(motivo === 1){
-                arreglo[motivo] = 1;
+                arreglo[0] = 1;
             } else {
-                arreglo[motivo] = 2;
+                arreglo[0] = 2;
             }
         }
 
@@ -38,12 +50,12 @@ function asignaValores() {
             return false;
         } else {
             if(personas === 3){
-                arreglo[personas] = 3;
+                arreglo[1] = 3;
             } else {
                 if(personas === 4){
-                    arreglo[personas] = 4;
+                    arreglo[1] = 4;
                 } else {
-                    arreglo[personas] = 5;
+                    arreglo[1] = 5;
                 }
             }
         }
@@ -53,9 +65,9 @@ function asignaValores() {
             return false;
         } else {
             if(precio === 6){
-                arreglo[precio] = 6;
+                arreglo[2] = 6;
             } else {
-                arreglo[precio] = 7;
+                arreglo[2] = 7;
             }
         }
     }
