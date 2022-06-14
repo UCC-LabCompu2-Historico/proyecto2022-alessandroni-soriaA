@@ -1,4 +1,4 @@
-document.getElementById("iconoBusqueda").addEventListener("click", mostrar_buscador);
+document.getElementById("contenedorIconoBuscar").addEventListener("click", mostrar_buscador);
 document.getElementById("contenedorBusqueda").addEventListener("click", ocultar_buscador);
 
 barraBusqueda =  document.getElementById("barraBusqueda");
