@@ -36,35 +36,35 @@ body {
     animation: slider 10s linear infinite;
     transition: all 200ms ease-out;
 }
-.slider .img1{
+.slider .London5{
     z-index: -1;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo10.jpg");
+    height: 50%;
+    background-image: url("imagenes/London5.jpg");
     animation-delay: 10s;
     background-size: cover;
 }
-.slider .img2{
+.slider .London6{
     z-index: -2;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo11.jpg");
+    height: 50%;
+    background-image: url("imagenes/London6.jpg");
     animation-delay: 20s;
     background-size: cover;
 }
-.slider .img3{
+.slider .London10{
     z-index: -3;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo12.jpg");
+    height: 50%;
+    background-image: url("imagenes/London10.webp");
     animation-delay: 30s;
     background-size: cover;
 }
-.slider .img4{
+.slider .London8{
     z-index: -4;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo13.jpg");
+    height: 50%;
+    background-image: url("imagenes/London8.jpg");
     animation-delay: 40s;
     background-size: cover;
 }
