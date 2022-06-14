@@ -1,5 +1,6 @@
 body {
     background-color: hsl(214, 100%, 93%);
+    width: 100%;
 }
 .titulo { 
     font-family: Rockwell; 
@@ -114,14 +115,14 @@ body {
 
 
  .contenedor-principal {
-
      width: 750%;
+     height: 750%;
     display: inline-flex;
     align-items: center;
     position: relative;
+     overflow: hidden;
 
 }
-
 
 .contenedor-principal .flecha-izquierda,
 .contenedor-principal .flecha-derecha {
@@ -149,7 +150,7 @@ body {
 
 }
 .contenedor-principal .flecha-derecha {
-    right: 0;
+    right: 80%;
 
 }
 
@@ -162,34 +163,34 @@ body {
 
 .contenedor-principal .contenedor-carrusel {
 
-    width: 100%;
+    width: 750%;
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
 
 }
 
-.carrusel {
+.contenedor-principal .contenedor-carrusel .carrusel {
 
     display: inline-flex;
     flex-wrap: nowrap;
+    overflow: hidden;
 }
 
-.contenedor-carrusel .carrusel {
+.contenedor-carrusel .carrusel .destinos{
 
-    width: 20%;
+    min-width: 600%;
     transition: .3s ease all;
     bow-shadow: 5px 5px 10px pink rgb(210, 52, 145);
+    overflow: hidden;
 
 }
 
-
-
-.contenedor-carrusel .carrusel image {
+.contenedor-carrusel .carrusel .destinos img {
 
 width: 100%;
     vertical-align: top;
-
+overflow: hidden;
 }
 
 .contenedor-titulo .indicadores {
@@ -248,7 +249,7 @@ width: 100%;
 
 }
 .contenedor-principal2 .flecha-derecha2 {
-    right: 0;
+    right: 80%;
 
 }
 
