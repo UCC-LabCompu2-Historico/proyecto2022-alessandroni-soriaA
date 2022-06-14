@@ -321,15 +321,47 @@ overflow: hidden;
 
 }
 
-.contenedor-principal2 {
 
-    width: 750%;
-    display: inline-flex;
-    align-items: center;
-    position: relative;
+
+@media screen and (max-width: 800px) {
+
+    .contenedor-principal .contenedor-carrusel {
+
+
+        overflow: visible;
+    }
+
+
+    .contenedor-principal .contenedor-carrusel .carrusel{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .destinos {
+        font-size: 14px;
+
+    }
+
+    .contenedor-principal .flecha-izquierda,
+    .contenedor-principal .flecha-derecha {
+
+        display: none;
+    }
+
 
 }
 
+.contenedor-principal2 {
+    width: 750%;
+    height: 750%;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
 
 .contenedor-principal2 .flecha-izquierda2,
 .contenedor-principal2 .flecha-derecha2 {
@@ -370,37 +402,37 @@ overflow: hidden;
 
 .contenedor-principal2 .contenedor-carrusel2 {
 
-    width: 100%;
+    width: 750%;
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
 
 }
 
-.carrusel2 {
+.contenedor-principal2 .contenedor-carrusel2 .carrusel2 {
 
     display: inline-flex;
     flex-wrap: nowrap;
+    overflow: hidden;
 }
 
-.contenedor-carrusel2 .carrusel2 {
+.contenedor-carrusel2 .carrusel2 .destinos2{
 
-    width: 20%;
+    min-width: 600%;
     transition: .3s ease all;
     bow-shadow: 5px 5px 10px pink rgb(210, 52, 145);
+    overflow: hidden;
 
 }
 
-
-
-.contenedor-carrusel2 .carrusel2 image {
+.contenedor-carrusel2 .carrusel2 .destinos2 img {
 
     width: 100%;
     vertical-align: top;
-
+    overflow: hidden;
 }
 
-.contenedor-titulo .indicadores {
+.contenedor-titulo2 .indicadores2 {
 
     background-color: black;
     height: 3px;
@@ -419,6 +451,8 @@ overflow: hidden;
 
 
 }
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -449,6 +483,7 @@ overflow: hidden;
 
 
 }
+
 
 @media screen and (max-width: 800px) {
 
