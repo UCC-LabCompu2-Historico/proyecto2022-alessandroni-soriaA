@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>TravelWithUS</title>
@@ -9,7 +9,7 @@
     <script type="text/javascript" src="js\index.js"></script>
 </head>
 
-<body id="body" onload="setInterval(animarAvion, 15)" onload="setInterval(draw, 30)">
+<body id="body" onload="setInterval(animarAvion, 15)">
 <header>
     <div class="div1"> <!--Parte de arriba-->
         <div class="logo">
@@ -69,10 +69,6 @@
         <h2>Podes viajar a cualquiera de estos hermosos destinos</h2>
     </div>
 
-    <canvas id="myCanvas1" width="800 px" height="300 px" onload="hacerPanorama()" onload="draw()"> </canvas>
-
-
-
     <div class="videosyoutube">
         <div class="videoyou1">
             <iframe src="https://www.youtube.com/embed/DLezOMaj3ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -82,13 +78,14 @@
         </div>
     </div>
 
+
     <hr class="lineaPunteada"/>
+</div>
 </main>
 
-
-<canvas id="myCanvas2" class="canvas" width="2000 px" height="400 px" onload="dibujarImagen()">
-
+<canvas id="myCanvas" class="canvas" width="2000 px" height="400 px" onload="dibujarImagen(x,y)">
 </canvas>
+
 
 
 <footer>

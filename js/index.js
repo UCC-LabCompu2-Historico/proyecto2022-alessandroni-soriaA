@@ -58,120 +58,19 @@ function buscador_interno(){
     }
 }
 
-function hacerPanorama () {
 
-    var canvas = document.getElementById("myCanvas1");
-    var ctx = myCanvas2.getContext('2d');
-
-    canvas.width = canvas.width;
-
-    var image = new Image();
-
-    image.src = "imagenes/panoramica.png";
-
-    var CanvassizeX = 800;
-    var CanvassizeY = 300;
-
-    var velocidad = 40;
-    var scale = 1.05;
-    var y = -4.5;
-
-    var dx = 0.75;
-    var imgW;
-    var imgH;
-
-    var x = 0;
-    var clearX;
-    var clearY;
-
-    image.onload = function () {
-
-        imgW = image.width * scale;
-        imgH = image.height * scale;
-
-        if (imgW > CanvassizeX) {
-
-            x = CanvassizeX - imgW;
-
-        }
-
-        if (imgW > CanvassizeX) {
-
-            clearX = imgW;
-
-        } else {
-
-            clearX = CanvassizeX;
-        }
-
-        if (imgH > CanvassizeY) {
-
-            clearY = imgH;
-
-
-        } else {
-
-            clearY = CanvassizeY;
-
-        }
-
-
-    }
-
-
-    ctx.clearRect(0, 0, clearX, clearY );
-
-    if (imgW <= CanvassizeX) {
-
-        if ( x > CanvassizeX) {
-
-            x = -imgW + x;
-
-        }
-
-        if (x > 0) {
-
-            ctx.drawImage(image, -imgW+x, y, imgW, imgH);
-
-        }
-
-        if (x - imgW > 0) {
-
-            ctx.drawImage (img, -imgW*2 + x, y, imgW, imgH);
-
-        }
-
-    }
-
-    else {
-        // reiniciar, comenzar desde el principio
-        if (x > (CanvassizeX)) {
-            x = CanvassizeX - imgW;
-        }
-        // dibujar image adicional
-        if (x > (CanvassizeX-imgW)) {
-            ctx.drawImage(Imagen, x - imgW + 1, y, imgW, imgH);
-        }
-    }
-    // dibujar imagen
-    ctx.drawImage(Imagen, x, y,imgW, imgH);
-    // cantidad para moverse
-    x += dx;
-}
-
-
-var x=40;
-var y=40;
+x=40;
+y=40;
 
 function dibujarImagen (x, y) {
 
-    var canvas = document.getElementById("myCanvas2");
+    var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
     console.log(x, y);
 
     var img = new Image();
-    img.src = "imagenes/avion1.png";
+    img.src = "imagenes/avion.png";
 
     canvas.width = canvas.width;
 
@@ -183,18 +82,18 @@ function dibujarImagen (x, y) {
 
 }
 
-var x=0;
-var dx=2; //como se va a ir moviendo
+x=0;
+dx=2; //como se va a ir moviendo
 
 function animarAvion () {
 
-    var canvas = document.getElementById("myCanvas2");
+    var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
 
     var img = new Image();
-    img.src = "imagenes/avion1.png";
+    img.src = "imagenes/avion.png";
 
     img.onload = function () {
         ctx.drawImage(img, x, 100);
