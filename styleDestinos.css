@@ -109,6 +109,121 @@ body {
         font-size: 150%; 
         text-align: center;
 }
+
+/*contenedor y flechas**/
+
+
+ .contenedor-principal {
+
+     width: 750%;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.contenedor-principal .flecha-izquierda,
+.contenedor-principal .flecha-derecha {
+
+    position: absolute;
+    border: none;
+    background-color: rgb(201, 126, 161);
+    font-size: 50px;
+    height: 20%;
+    top: calc(50%- 25%);
+    line-height: 30px;
+    width: 40px;
+    color: pink;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+
+
+}
+
+.contenedor-principal .flecha-izquierda{
+
+    left: 0;
+
+
+}
+.contenedor-principal .flecha-derecha {
+    right: 0;
+
+}
+
+ .contenedor-principal .flecha-izquierda:hover,
+ .contenedor-principal .flecha-derecha:hover {
+
+    background-color: rgb(210, 52, 145);
+
+}
+
+.contenedor-principal .contenedor-carrusel {
+
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.carrusel {
+
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.contenedor-carrusel .carrusel {
+
+    width: 20%;
+    transition: .3s ease all;
+    bow-shadow: 5px 5px 10px pink rgb(210, 52, 145);
+
+}
+
+
+
+.contenedor-carrusel .carrusel image {
+
+width: 100%;
+    vertical-align: top;
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .contenedor-principal .contenedor-carrusel {
+
+
+        overflow: visible;
+    }
+
+
+    .contenedor-principal .contenedor-carrusel .carrusel{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .destinos {
+        font-size: 14px;
+
+    }
+
+    .contenedor-principal .flecha-izquierda,
+    .contenedor-principal .flecha-derecha {
+
+        display: none;
+    }
+
+
+}
+
+
+
 .footer{
     font-family: Rockwell;
     text-align: left;

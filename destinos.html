@@ -3,6 +3,7 @@
   <head>
     <link rel="icon" href="imagenes/icono_title.png" type="image/x-icon">
     <link rel="stylesheet" href="./styleDestinos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Destinos disponibles</title>
   </head>
@@ -20,12 +21,19 @@
       </div> <!--Fin parte de arriba-->
       <br/><br/>
 
+
       <div> <!--Parte central-->
         <p class="titulo">Las mejores opciones</p>
       </div><br/>
-      
-      <div>
-        <marquee behavior="alternate" scrolldelay="0" scrollamount="5" direction="right" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()">
+
+      <div class="contenedor-principal">
+
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i>  </button>
+
+        <div class="contenedor-carrusel">
+
+        <div class="carrusel" behavior="alternate" scrolldelay="0" scrollamount="5" direction="right" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()">
+          <div class="destinos">
           <a href="Roma.html" target="_blank">
             <div class="divisionImagen">
               <figure>
@@ -76,7 +84,13 @@
               </figure>
             </div>
           </a>
-        </marquee>
+          </div>
+        </div>
+      </div>
+
+        <button role="button" id="flecha-derecha" class="flecha-derecha"> <i class="fa-solid fa-angle-right"></i> </button>
+
+
       </div>
       <br/><br/><br/><br/>
 
