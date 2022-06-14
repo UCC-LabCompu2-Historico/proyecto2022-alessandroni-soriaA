@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imagenes/icono_title.png" type="image/x-icon">
     <link rel="stylesheet" href="styleTest.css">
     <meta charset="UTF-8">
     <title>DESCUBRE TU DESTINO</title>
-    <script type="text/javascript" src="/js/test.js"></script>
 </head>
 <body>
     <header>
@@ -34,62 +35,14 @@
             </div>
         </div>
     </header>
-    
     <div class="form">
         <h2 class="form_title">COMENZA YA</h2>
         <div class="form_container">
-            <form class="form_group" id="test" name="test">
-                <div class="motivo" id="motivo">
-                    <h3>Motivo del viaje: </h3>
-                    <label for="Placer" class="opciones">
-                        <input type="radio" id="Placer" name="motivo" onclick="motivoPlacer()" value = 1> Por placer
-                        <br>
-                    </label>
-                    <label for="Negocios" class="opciones">
-                        <input type="radio" id="Negocios" name="motivo" onclick="motivoNegocios()" value = 2> Por negocios
-                        <br>
-                    </label>
-                </div>
-                <div class="personas" id="personas">
-                    <h3>¿Viaja solo?</h3>
-                    <label for="Solo" class="opciones">
-                        <input type="radio" id="Solo" name="personas" value = 3 > Si, viajo solo
-                        <br>
-                    </label>
-                    <label for="Familia" class="opciones">
-                        <input type="radio" id="Familia" name="personas" value = 4 > No, viajo con mi familia o con mi pareja
-                        <br>
-                    </label>
-                    <label for="Amigos" class="opciones">
-                        <input type="radio" id="Amigos" name="personas" value = 5 > No, viajo con mis amigos
-                        <br>
-                    </label>
-                </div>
-                <div class="precio" id="precio">
-                    <h3>¿Quiere destinos económicos o turísticos?</h3>
-                    <label for="Economicos" class="opciones">
-                        <input type="radio" id="Economicos" name="precio" value = 6 >Destinos económicos 
-                        <br>
-                    </label>
-
-                    <label for="Turisticos" class="opciones">
-                        <input type="radio" id="Turisticos" name="precio" value = 7 >Prefiero destinos turísticos
-                        <br>
-                    </label>
-                </div>
-            </form>
-            <button class="form_submit" id="botonResul" onclick="asignaValores()"> Enviar Respuestas </button>
-            <h2 class="tituloRta">Estas son las ciudades a las que podría viajar: <span class="span" id="resultado"></span></h2>
-        </div>
+            <div id="test" class="form_group"></div>
+            <button class="form_submit" id="boton">Mostrar resultado</button>
+            <div class="tituloRta" id="resultado"></div>
+        </div>        
     </div>
-       
-    <div>
-        <button title="Volver" class="volver">
-            <a href="index.html">
-                <h1>Volver</h1>
-            </a>
-        </button>
-        <hr class="lineaPunteada"/>
-    </div>
+    <script src="js/test.js"></script>
 </body>
 </html>

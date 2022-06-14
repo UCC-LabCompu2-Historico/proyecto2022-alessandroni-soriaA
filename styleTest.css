@@ -184,7 +184,15 @@ h2{
 
 #resultado{
     font-size: 30px;
-    color: darkred;
+    font-family: Rockwell;
+    display: inline-block;
+    color: #375995;
+}
+
+#resultado a{
+    font-size: 35px;
+    font-family: Rockwell;
+    color: #224b92;
 }
 
 .form {
@@ -204,29 +212,16 @@ h2{
     margin-bottom: 1em;
 }
 
+.cuestion{
+    color: #af1e69;
+    font-size: 1.2rem;
+    font-family: Rockwell;
+}
+
 .form_group {
     color: #c45890;
     font-size: 1rem;
     font-family: Rockwell;
-}
-
-.opciones{
-    cursor: pointer; 
-}
-
-.motivo{
-    width: 100%;
-    padding: 1em;
-}
-
-.personas{
-    width: 100%;
-    padding: 1em;
-}
-
-.precio{
-    width: 100%;
-    padding: 1em 0% 2em;
 }
 
 .form_label {
