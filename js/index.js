@@ -1,4 +1,4 @@
-document.getElementById("contenedorIconoBuscar").addEventListener("click", mostrar_buscador);
+document.getElementById("iconoBusqueda").addEventListener("click", mostrar_buscador);
 document.getElementById("contenedorBusqueda").addEventListener("click", ocultar_buscador);
 
 barraBusqueda =  document.getElementById("barraBusqueda");
@@ -83,13 +83,15 @@ function dibujarImg (x,y) {
 
 }
 
-let x = 0;
+x = 0;
 dx = 2;
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext ("2d");
+canvas.addEventListener("load", animarAvión);
 
 function animarAvión () {
 
-
-    var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext ("2d");
 
     canvas.width= canvas.width;
