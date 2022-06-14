@@ -36,35 +36,35 @@ body {
     animation: slider 10s linear infinite;
     transition: all 200ms ease-out;
 }
-.slider .img1{
+.slider .ny1{
     z-index: -1;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo10.jpg");
+    height: 50%;
+    background-image: url("imagenes/ny1.jpg");
     animation-delay: 10s;
     background-size: cover;
 }
-.slider .img2{
+.slider .ny3{
     z-index: -2;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo11.jpg");
+    height: 50%;
+    background-image: url("imagenes/ny3.jpg");
     animation-delay: 20s;
     background-size: cover;
 }
-.slider .img3{
+.slider .ny5{
     z-index: -3;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo12.jpg");
+    height: 50%;
+    background-image: url("imagenes/ny5.png");
     animation-delay: 30s;
     background-size: cover;
 }
 .slider .img4{
     z-index: -4;
     width: 100%;
-    height: 350px;
-    background-image: url("imagenes/pueblo13.jpg");
+    height: 50%;
+    background-image: url("imagenes/ny4.jpg");
     animation-delay: 40s;
     background-size: cover;
 }
