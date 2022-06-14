@@ -38,19 +38,19 @@
     <div class="form">
         <h2 class="form_title">COMENZA YA</h2>
         <div class="form_container">
-            <div class="form_group">
-                <section class="motivo" id="motivo">
+            <div class="form_group" id="test">
+                <div class="motivo" id="motivo">
                     <h3>Motivo del viaje: </h3>
                     <label for="Placer" class="opciones">
-                        <input type="radio" id="Placer" name="motivo" value="placer" onclick="respuesta(0,this)"> Por placer
+                        <input type="radio" id="Placer" name="motivo" value="placer" onclick="true"> Por placer
                         <br>
                     </label>
                     <label for="Negocios" class="opciones">
-                        <input type="radio" id="Negocios" name="motivo" value="negocios" onclick="respuesta(0,this)"> Por negocios
+                        <input type="radio" id="Negocios" name="motivo" value="negocios" onclick="respuesta(2)"> Por negocios
                         <br>
                     </label>
-                </section>
-                <section class="personas" id="personas">
+                </div>
+                <div class="personas" id="personas">
                     <h3>¿Viaja solo?</h3>
                     <label for="Solo" class="opciones">
                         <input type="radio" id="Solo" name="personas" value="solo" onclick="respuesta(1,this)"> Si, viajo solo
@@ -64,8 +64,8 @@
                         <input type="radio" id="Amigos" name="personas" value="amigos" onclick="respuesta(1,this)"> No, viajo con mis amigos
                         <br>
                     </label>
-                </section>
-                <section class="precio" id="precio">
+                </div>
+                <div class="precio" id="precio">
                     <h3>¿Quiere destinos económicos o turísticos?</h3>
                     <label for="Economicos" class="opciones">
                         <input type="radio" id="Economicos" name="precio" value="economicos" onclick="respuesta(2,this)">Destinos económicos 
@@ -76,9 +76,9 @@
                         <input type="radio" id="Turisticos" name="precio" value="turisticos" onclick="respuesta(2,this)">Prefiero destinos turísticos
                         <br>
                     </label>
-                </section>
+                </div>
             </div>
-            <button class="form_submit" onclick="corregir()"> Enviar Respuestas </button>
+            <button class="form_submit" id="botonResul" onclick="evaluar()"> Enviar Respuestas </button>
             <h2 class="tituloRta">Estas son las ciudades a las que podría viajar: <span class="span" id="resultado"></span></h2>
         </div>
     </div>
