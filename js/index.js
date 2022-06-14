@@ -59,20 +59,21 @@ function buscador_interno(){
 }
 
 
-x=40;
-y=40;
+const x=40;
+const y=40;
 
-function dibujarImagen (x, y) {
+
+function dibujarImg (x,y) {
 
     var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+    var ctx = canvas.getContext ("2d");
 
-    console.log(x, y);
 
     var img = new Image();
-    img.src = "imagenes/avion.png";
 
-    canvas.width = canvas.width;
+    img.src = "imagenes/Avion.png";
+
+    canvas.width= canvas.width;
 
     img.onload = function () {
 
@@ -82,29 +83,37 @@ function dibujarImagen (x, y) {
 
 }
 
-x=0;
-dx=2; //como se va a ir moviendo
+let x = 0;
+dx = 2;
 
-function animarAvion () {
+function animarAvión () {
+
 
     var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+    var ctx = canvas.getContext ("2d");
 
-    canvas.width = canvas.width;
+    canvas.width= canvas.width;
+
 
     var img = new Image();
-    img.src = "imagenes/avion.png";
+
+    img.src = "imagenes/Avion.png";
 
     img.onload = function () {
-        ctx.drawImage(img, x, 100);
+
+        ctx.drawImage(img, x, y);
+
     }
 
     if (x>canvas.width) {
+
         x=0;
     }
 
-    x = x + dx;
+    x += dx;
+
 }
+
 
 function verificarRtas () {
 
