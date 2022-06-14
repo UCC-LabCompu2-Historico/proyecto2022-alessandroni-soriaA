@@ -1,57 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans:wght@300&family=Radio+Canada:wght@300&family=Roboto:ital,wght@0,400;0,700;1,300&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 
-body {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Radio Canada', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Water Brush', cursive;
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background-image:  radial-gradient(#f264d7 0.5px, transparent 0.5px), radial-gradient(#f264d7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
-    margin: 0% 0% 0% 0%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 10;
+}
+
+body{
+    width:100%;
+    margin: 0 auto;
+    min-width:600px;
+    max-width:2000px;
+    background-image: url(imagenes/fondo.jpg);
+    background-repeat: no-repeat; background-size: cover;
+}
+
+.div1{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+} 
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo{
+    width: 70px;
+    height: 70px;
+}
+
+
+.menu {
+    height: 80px;
+    margin-right: 60px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.paginaSeleccionada:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #375995;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+    color: #777777;
+    font-size: 18px;
+    transition: color 300ms;
+    font-family: Rockwell;
+}
+
+.menu nav ul li a:hover{
+    color: #375995;
+}
+
+.menu .textoSeleccionado{
+    color: #375995;
+}
+
+.menu nav ul li a i{
+    display: none;
+}
+
+.tituloDePagina{
+    font-family: Rockwell;
+    display: inline-block;
+    text-align: left;
+    vertical-align: 100%;
+    color: rgb(28, 49, 68);
+    text-shadow: 1px 1px 30px rgb(255, 255, 255), 2px 5px 2px rgb(177, 176, 176);
+}
+
+h1 {
+    color: #375995;
+    font-size: 200%;
+    font-family: Rockwell;
+}
+
+/*
+.container{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+section{
+    border: 2px solid #5624d0;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+label:hover{
+    background: #cec0fc;
+}
+
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #76d7c8;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: #000;
+    color: #fff;
+    transition: all .3s;
+    transform: scale(1.1);
+}
+
+h2{
+    text-align: center;
+}
+
+#resultado{
+    font-size: 30px;
+    color: darkred;
+} */
 
 .form {
     background-color: whitesmoke;
     margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 6em 3em;
+    width: 200%;
+    max-width: 600px;
+    padding: 8em 6em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     text-align: center;
 }
 
 .form_title {
-    font-family: Roboto;
+    font-family: Rockwell;
     font-size: 2rem;
-    margin-bottom: .5em;
-}
-
-.form_container {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em;
+    margin-bottom: 1em;
 }
 
 .form_group {
-    width: 100%;
     color: #c45890;
     font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    font-family: Roboto, sans-serif;
+    font-family: Rockwell;
 }
 
 .opciones{
-    cursor: pointer    
+    cursor: pointer; 
 }
 
+.motivo{
+    width: 100%;
+    padding: 1em;
+}
+
+.personas{
+    width: 100%;
+    padding: 1em;
+}
+
+.precio{
+    width: 100%;
+    padding: 1em 0% 2em;
+}
 
 .form_label {
     color: navajowhite;
@@ -70,9 +230,10 @@ body {
     box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
     font-family: Rockwell;
     color: #2c2729;
-    font-size: 120%;
+    font-size: 130%;
     text-align: center;
     cursor: pointer;
+    padding: 0.5em;
 }
 
 .volver{
