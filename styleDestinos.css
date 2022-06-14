@@ -192,6 +192,125 @@ width: 100%;
 
 }
 
+.contenedor-titulo .indicadores {
+
+    background-color: black;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+    overflow: hidden;
+
+}
+
+.contenedor-titulo .indicadores:hover,
+.contenedor-titulo .indicadores.activo {
+
+    background-color: lightcoral;
+
+
+}
+
+.contenedor-principal2 {
+
+    width: 750%;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.contenedor-principal2 .flecha-izquierda2,
+.contenedor-principal2 .flecha-derecha2 {
+
+    position: absolute;
+    border: none;
+    background-color: rgb(201, 126, 161);
+    font-size: 50px;
+    height: 20%;
+    top: calc(50%- 25%);
+    line-height: 30px;
+    width: 40px;
+    color: pink;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+
+
+}
+
+.contenedor-principal2 .flecha-izquierda2{
+
+    left: 0;
+
+
+}
+.contenedor-principal2 .flecha-derecha2 {
+    right: 0;
+
+}
+
+.contenedor-principal2 .flecha-izquierda2:hover,
+.contenedor-principal2 .flecha-derecha2:hover {
+
+    background-color: rgb(210, 52, 145);
+
+}
+
+.contenedor-principal2 .contenedor-carrusel2 {
+
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.carrusel2 {
+
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.contenedor-carrusel2 .carrusel2 {
+
+    width: 20%;
+    transition: .3s ease all;
+    bow-shadow: 5px 5px 10px pink rgb(210, 52, 145);
+
+}
+
+
+
+.contenedor-carrusel2 .carrusel2 image {
+
+    width: 100%;
+    vertical-align: top;
+
+}
+
+.contenedor-titulo .indicadores {
+
+    background-color: black;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+    overflow: hidden;
+
+}
+
+.contenedor-titulo .indicadores:hover,
+.contenedor-titulo .indicadores.activo {
+
+    background-color: lightcoral;
+
+
+}
+
 @media screen and (max-width: 800px) {
 
     .contenedor-principal .contenedor-carrusel {
@@ -222,7 +341,35 @@ width: 100%;
 
 }
 
+@media screen and (max-width: 800px) {
 
+    .contenedor-principal2 .contenedor-carrusel2 {
+
+
+        overflow: visible;
+    }
+
+
+    .contenedor-principal2 .contenedor-carrusel2 .carrusel2{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .destinos2 {
+        font-size: 14px;
+
+    }
+
+    .contenedor-principal2 .flecha-izquierda2,
+    .contenedor-principal2 .flecha-derecha2 {
+
+        display: none;
+    }
+
+
+}
 
 .footer{
     font-family: Rockwell;

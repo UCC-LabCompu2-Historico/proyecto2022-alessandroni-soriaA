@@ -24,6 +24,7 @@
 
       <div> <!--Parte central-->
         <p class="titulo">Las mejores opciones</p>
+        <div class="indicadores"></div>
       </div><br/>
 
       <div class="contenedor-principal">
@@ -99,8 +100,14 @@
       </div>
       <br/>
 
-      <div>
-        <marquee behavior="alternate" scrolldelay="0" scrollamount="5" direction="left" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()">
+      <div class="contenedor-principal2">
+
+        <button role="button" id="flecha-izquierda2" class="flecha-izquierda2"><i class="fa-solid fa-angle-left"></i>  </button>
+
+        <div class="contenedor-carrusel2">
+
+        <div class="carrusel2" behavior="alternate" scrolldelay="0" scrollamount="5" direction="left" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()">
+          <div class="destinos2">
           <a href="NewYork.html" target="_blank">
             <div class="divisionImagen">
               <figure>
@@ -151,10 +158,18 @@
               </figure>
             </div>
           </a>
-        </marquee>
+        </div>
+        </div>
+
+
+        <button role="button" id="flecha-derecha2" class="flecha-derecha2"> <i class="fa-solid fa-angle-right"></i> </button>
+
         <hr class="lineaPunteada"/>
         <br/>
       </div>
+
+      </div>
+
     </main>
     <div>
         <button title="Volver" class="volver">
