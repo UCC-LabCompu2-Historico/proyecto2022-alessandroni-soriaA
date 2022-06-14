@@ -4,22 +4,21 @@ const resultadoTest = document.getElementById("resultado");
 
 const preguntas = [
   {
-    pregunta: "1. Cuál es la capital de Irán?",
+    pregunta: "1. Cuál es el motivo de su viaje?",
     respuestas: {
-      a: "Bagdad",
-      b: "Teherán",
-      c: "Islamabad",
+      a: "Viajo por placer",
+      b: "Viajo por negocios",
     },
-    respuestaCorrecta: "b",
+    respuestaCorrecta: "a",
   },
   {
-    pregunta: "2. Cuál es la capital de Irak?",
+    pregunta: "2. Con quien viaja?",
     respuestas: {
-      a: "Kuwait",
-      b: "Dubai",
-      c: "Bagdad",
+      a: "Viajo solo",
+      b: "Viajo con mi familia",
+      c: "Viajo con mis amigos",
     },
-    respuestaCorrecta: "c",
+    respuestaCorrecta: "a",
   },
   {
     pregunta: "3. Cuál es la capital de Noruega?",
@@ -29,70 +28,7 @@ const preguntas = [
       c: "Estocolmo",
       d: "Oslo",
     },
-    respuestaCorrecta: "d",
-  },
-  {
-    pregunta: "4. Cuál es la capital de Serbia?",
-    respuestas: {
-      a: "Belgrado",
-      b: "Zagreb",
-      c: "Kabul",
-    },
     respuestaCorrecta: "a",
-  },
-  {
-    pregunta: "5. Cuál es la capital de Australia?",
-    respuestas: {
-      a: "Sidney",
-      b: "Zurich",
-      c: "Canberra",
-    },
-    respuestaCorrecta: "c",
-  },
-  {
-    pregunta: "6. Cuál es la capital de Canadá?",
-    respuestas: {
-      a: "Toronto",
-      b: "Montreal",
-      c: "Ontario",
-    },
-    respuestaCorrecta: "c",
-  },
-  {
-    pregunta: "7. Cuál es la capital de Vietnam?",
-    respuestas: {
-      a: "Puket",
-      b: "Ho Chin Ming",
-      c: "Pan Lao Kung",
-    },
-    respuestaCorrecta: "b",
-  },
-  {
-    pregunta: "8. Cuál es la capital de China?",
-    respuestas: {
-      a: "Shangai",
-      b: "Pekín",
-      c: "Seul",
-    },
-    respuestaCorrecta: "b",
-  },
-  {
-    pregunta: "9. Cuál es la capital de Pakistan?",
-    respuestas: {
-      a: "Islamabad",
-      b: "Kuwait",
-      c: "Kabul",
-    },
-    respuestaCorrecta: "a",
-  },
-  {
-    pregunta: "10. Cuál es la capital de Marruecos?",
-    respuestas: {
-      a: "Casablanca",
-      b: "Rabat",
-      c: "Kabul",
-    },
-    respuestaCorrecta: "b",
   },
 ];
 
