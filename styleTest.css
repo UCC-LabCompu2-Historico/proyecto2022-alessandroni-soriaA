@@ -113,19 +113,18 @@ body{
 
 h1 {
     color: #375995;
-    font-size: 200%;
+    font-size: 1.5em;
     font-family: Rockwell;
 }
 
-/*
-.container{
+.form_container{
     max-width: 700px;
     margin: auto;
     padding: 20px;
 }
 
 section{
-    border: 2px solid #5624d0;
+    border: 2px solid #cecece;
     border-radius: 7px;
     padding: 10px;
     margin: 10px 0;
@@ -144,22 +143,39 @@ label:hover{
     background: #cec0fc;
 }
 
-button{
+button:hover{
+    background: rgb(85, 21, 138);
+    color: #fff;
+    transition: all .3s;
+    transform: scale(1.1);
+}
+
+.form_submit{
     width: 80%;
     display: block;
     margin: auto;
     padding: 10px;
-    background-color: #76d7c8;
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    background: #fda9ef;
+    -moz-border-radius: 0px 35px 0px 35px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    text-shadow: 2px 2px 10px rgb(194, 194, 194);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
+    font-family: Rockwell;
+    color: #2c2729;
+    font-size: 130%;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5em;
 }
 
-button:hover{
-    background: #000;
-    color: #fff;
-    transition: all .3s;
-    transform: scale(1.1);
+.tituloRta{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    color: #c45890;
 }
 
 h2{
@@ -169,7 +185,7 @@ h2{
 #resultado{
     font-size: 30px;
     color: darkred;
-} */
+}
 
 .form {
     background-color: whitesmoke;
@@ -220,20 +236,6 @@ h2{
     left: 5px;
     transform: translateX(10px);
     transition: transform .5s, color .3s;
-}
-
-.form_submit{
-    background: #fda9ef;
-    -moz-border-radius: 0px 35px 0px 35px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    text-shadow: 2px 2px 10px rgb(194, 194, 194);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
-    font-family: Rockwell;
-    color: #2c2729;
-    font-size: 130%;
-    text-align: center;
-    cursor: pointer;
-    padding: 0.5em;
 }
 
 .volver{
