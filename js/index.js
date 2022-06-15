@@ -58,107 +58,25 @@ function buscador_interno(){
     }
 }
 
+var x = 0;
+var dx = 2;
 
-const x=40;
-const y=40;
-
-
-function dibujarImg (x,y) {
-
+function animarAvion() {
+    
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext ("2d");
+    
+    var img = new Image ();
+    img.src = "imagenes/avionPrueba.png";
 
-
-    var img = new Image();
-
-    img.src = "imagenes/Avion.png";
-
-    canvas.width= canvas.width;
-
-    img.onload = function () {
-
-        ctx.drawImage(img, x, y);
-
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    img.onload = function(){
+        ctx.drawImage(img, x, 10);
     }
 
+if( x > 700 ){
+    x = 0;
 }
-
-x = 0;
-dx = 2;
-
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext ("2d");
-canvas.addEventListener("load", animarAvión);
-
-function animarAvión () {
-
-    var ctx = canvas.getContext ("2d");
-
-    canvas.width= canvas.width;
-
-
-    var img = new Image();
-
-    img.src = "imagenes/Avion.png";
-
-    img.onload = function () {
-
-        ctx.drawImage(img, x, y);
-
-    }
-
-    if (x>canvas.width) {
-
-        x=0;
-    }
-
     x += dx;
-
 }
-
-
-function verificarRtas () {
-
-    var total = 3;
-
-    var myForm = document.forms ["test"];
-
-    var Nueva;
-
-    var respuestasM = ["Por placer", "Por negocios"];
-    var respuestasP = ["Si, viajo solo", "No, viajo con mi familia o con mi pareja", "No, viajo con mis amigos"];
-    var respuestasPr = ["Destinos económicos ", "Prefiero destinos turísticos"];
-
-
-    for (var i = 1; i < total; i++) {
-
-        if (myForm["motivo"].value === null || myForm["motivo"].value === " ") {
-
-            alert("Porfavor rellene los campos faltantes ");
-            return false;
-
-        } else {
-
-            if (myForm["motivo"].value === respuestasM[0] && myForm["personas"].value === respuestasP[0] && myForm["precio"].value === respuestasPr[0]) {
-
-                Nueva = ""
-
-            } else {
-
-                if (myForm["motivo"].value === respuestasM[1] && myForm["personas"].value === respuestasP[0] && myForm["precio"].value === respuestasPr[0]) {
-
-
-                }
-
-
-            }
-
-
-        }
-
-    }
-
-    }
-
-
-

@@ -10,7 +10,7 @@
 
 </head>
 
-<body id="body" onload="setInterval(animarAvion, 15)">
+<body id="body">
 <header>
     <div class="div1"> <!--Parte de arriba-->
         <div class="logo">
@@ -66,6 +66,11 @@
         <a  href="destinos.html" target="_self"> <button class="boton-dos"><span> <strong>MIRA LOS DESTINOS DISPONIBLES </strong> </span>  </button> </a>
     </div>
     <hr class="lineaPunteada">
+
+    <div class="canvas" onload="setInterval(animarAvion, 15)">
+        <canvas id="myCanvas" class="myCanvas" width="700px" height="500px"></canvas>
+    </div>
+
     <div class="tituloVideosYoutube">
         <h2>Podes viajar a cualquiera de estos hermosos destinos</h2>
     </div>
@@ -78,12 +83,6 @@
             <iframe src="https://www.youtube.com/embed/NBs0RnKnNTE?list=PLzrSDlTJSNWDe48XV_6AIhuFxL6P-ySdi&t=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-
-<canvas id="myCanvas" class="canvas" width="1000px" height="300px">
-
-</canvas>
-
-
 
     <hr class="lineaPunteada"/>
 </div>
