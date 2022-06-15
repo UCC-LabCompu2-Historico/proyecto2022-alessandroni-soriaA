@@ -10,7 +10,7 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload="setInterval(animarAvion, 10)">
 <header>
     <div class="div1"> <!--Parte de arriba-->
         <div class="logo">
@@ -65,12 +65,13 @@
         <a  href="test.html" target="self"> <button class="boton-uno"> <span><strong> PROBA NUESTRO TEST </strong></span> </button></a>
         <a  href="destinos.html" target="_self"> <button class="boton-dos"><span> <strong>MIRA LOS DESTINOS DISPONIBLES </strong> </span>  </button> </a>
     </div>
-    <hr class="lineaPunteada">
 
-    <div class="canvas" onload="setInterval(animarAvion, 15)">
-        <canvas id="myCanvas" class="myCanvas" width="700px" height="500px"></canvas>
+    <div class="divCanvas">
+        <canvas id="myCanvas" class="canvas" height="500" width="1500">
+        </canvas>
     </div>
-
+    <br>
+    <hr class="lineaPunteada">
     <div class="tituloVideosYoutube">
         <h2>Podes viajar a cualquiera de estos hermosos destinos</h2>
     </div>

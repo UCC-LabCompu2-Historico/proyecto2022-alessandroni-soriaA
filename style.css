@@ -209,6 +209,21 @@ h1 {
     color: #242a2c;
 }
 
+.divCanvas{
+    margin-top: -15%;
+    height: auto;
+}
+
+.canvas{
+    height: 100%;
+    width: 100%;
+}
+
+.canvas img{
+    height: 20%;
+    width: fit-content;
+}
+
 .contenedor-botones {
     display: grid;
     width: 100%;

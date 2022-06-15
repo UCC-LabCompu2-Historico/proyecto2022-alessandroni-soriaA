@@ -1,3 +1,6 @@
+x = 0;
+dx = 2;
+
 document.getElementById("iconoBusqueda").addEventListener("click", mostrar_buscador);
 document.getElementById("contenedorBusqueda").addEventListener("click", ocultar_buscador);
 
@@ -58,8 +61,6 @@ function buscador_interno(){
     }
 }
 
-var x = 0;
-var dx = 2;
 
 function animarAvion() {
     
@@ -72,11 +73,12 @@ function animarAvion() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     img.onload = function(){
-        ctx.drawImage(img, x, 10);
+        ctx.drawImage(img, x, 100);
     }
 
-if( x > 700 ){
+if( x > canvas.width ){
     x = 0;
 }
+
     x += dx;
 }
