@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="imagenes/icono_title.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styleDestinos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Destinos disponibles</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="div1"> <!--Parte de arriba-->
+            <div class="logo">
+                <a href="index.html"> <!-- Agregar despues url de pagina de inicio-->
+                <img src="imagenes/logo.png" alt="logo avion" class="imgLogo" title="Travel with us">
+                </a>
+                <h1> SIGHTSEEING THE WORLD W US! </h1>
+            </div>
+            <div class="menu" id="mostrarMenu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> 
+                            <i class="index"></i> Inicio</a>
+                        </li>
+                        <li class="paginaSeleccionada"><a href="destinos.html" class="textoSeleccionado"> 
+                            <i class="destinos"> </i>Destinos</a>
+                        </li>
+                        <li><a href="test.html"> 
+                            <i class="test"></i>Test</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      </header>
+
+      <div> <!--Parte central-->
+        <p class="titulo">Las mejores opciones</p>
+        <div class="indicadores"></div>
+      </div><br/>
+
+      <div class="contenedor-principal">
+
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i>  </button>
+
+        <div class="contenedor-carrusel">
+          <iframe id="inlineFrameExample" title="Inline Frame Example" width="1350" height="500" src="sliders/index.html"> </iframe>
+        <!--<div class="carrusel" behavior="alternate" scrolldelay="0" scrollamount="5" direction="right" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()">
+          <div class="destinos">
+          <a href="Roma.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 1" alt="opcion 1: Italia" src="imagenes/italia_roma.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Roma, Italia</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Munich.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 2: Munich" alt="opcion 2: Munich" src="imagenes/alemania_munich.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Munich, Alemania</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Paris.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 3: Paris" alt="opcion 3: Paris" src="imagenes/francia_paris.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Paris, Francia</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Mykonos.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 4: Mykonos" alt="opcion 4: Mykonos" src="imagenes/grecia_mykonos.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Mykonos, Grecia</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Cancun.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 5: Cancun" alt="opcion 5: Cancun" src="imagenes/mexico_cancun.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Cancun, Mexico</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          </div>
+        </div> -->
+      </div>
+
+        <button role="button" id="flecha-derecha" class="flecha-derecha"> <i class="fa-solid fa-angle-right"></i> </button>
+
+
+      </div>
+      <br/><br/><br/><br/>
+
+      <div>
+        <p class="titulo">Las opciones de negocios</p>
+      </div>
+      <br/>
+
+      <div class="contenedor-principal2">
+
+        <button role="button" id="flecha-izquierda2" class="flecha-izquierda2"><i class="fa-solid fa-angle-left"></i>  </button>
+
+        <div class="contenedor-carrusel2">
+
+        <div class="carrusel2" behavior="alternate" scrolldelay="0" scrollamount="5" direction="left" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()">
+          <div class="destinos2">
+          <a href="NewYork.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 1: New York" alt="opcion 1: New York" src="imagenes/eeuu_newyork.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">New York, EEUU</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Tokyo.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 2: Tokyo" alt="opcion 2: Tokyo" src="imagenes/japon_tokyo.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Tokyo, Japón</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Londres.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 3: Londres" alt="opcion 3: Londres" src="imagenes/inglaterra_londres.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Londres, Inglaterra</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Dubai.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 4: Dubai" alt="opcion 4: Dubai" src="imagenes/eau_dubai.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Dubai, EAU</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+          <a href="Madrid.html" target="_blank">
+            <div class="divisionImagen">
+              <figure>
+                <img title="Opcion 5: Madrid" alt="opcion 5: Madrid" src="imagenes/espana_madrid.jpg" class="imagen"/>
+                <div class="divisionTexto">
+                  <h3 class="nombreDestino">Madrid, España</h3>
+                </div>
+              </figure>
+            </div>
+          </a>
+        </div>
+        </div>
+
+
+        <button role="button" id="flecha-derecha2" class="flecha-derecha2"> <i class="fa-solid fa-angle-right"></i> </button>
+
+        <hr class="lineaPunteada"/>
+        <br/>
+      </div>
+
+      </div>
+
+    </main>
+    <div>
+        <button title="Volver" class="volver">
+          <a href="index.html">
+            <h1>Volver</h1>
+          </a>
+        </button>
+        <hr class="lineaPunteada"/>
+    </div>
+    <footer>
+      <div class="footer">
+        <h3>Contacto:</h3>
+        <ul>
+          <li><a href="instagram.com/orne.alessandroni"><span> Orne Alessandroni</span></a></li>
+          <li><a href="instagram.com/juli_soriaa_"><span> Juli Soria</span></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
