@@ -4,100 +4,120 @@
     <meta charset="UTF-8">
     <title>TravelWithUS</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="icon" href="imagenes/icono_title.png" type="image/x-icon" alt="logo pagina" width="120" height="120" title="TRAVEL WITH US">
+    <link rel="icon" href="imagenes/icono_title.png" type="image/x-icon" title="TRAVEL WITH US">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js\index.js"></script>
 
 </head>
 
-<body id="body" onload="setInterval(animarAvion, 10)">
+<body id="body" onload="setInterval(animarAvión, 50)">
 <header>
     <div class="div1"> <!--Parte de arriba-->
         <div class="logo">
-            <a href="index.html"> <!-- Agregar despues url de pagina de inicio-->
-            <img src="imagenes/logo.png" alt="logo avion" class="imgLogo" title="Travel with us">
+            <a href="index.html"> <!-- Agregar después url de página de inicio-->
+                <img src="imagenes/logo.png" alt="logo avión" class="imgLogo" title="Travel with us">
             </a>
             <h1 style="display: inline-block; vertical-align: 30%"> SIGHTSEEING THE WORLD W US! </h1>
         </div>
-        <div class="menu" id="mostrarMenu">
+        <div class="menú" id="mostrarMenú">
             <nav>
                 <ul>
-                    <li class="paginaSeleccionada"><a href="index.html" class="textoSeleccionado"> 
+                    <li class="páginaSeleccionada"><a href="index.html" class="textoSeleccionado">
                         <i class="index"></i> Inicio</a>
                     </li>
-                    <li><a href="destinos.html"> 
+                    <li><a href="destinos.html">
                         <i class="destinos"> </i>Destinos</a>
                     </li>
-                    <li><a href="test.html"> 
+                    <li><a href="test.html">
                         <i class="test"></i>Test</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div id="contenedorIconoBuscar">
-            <i class="fas fa-search" id="iconoBusqueda" onclick="mostrar_buscador()"></i>
+            <i class="fas fa-search" id="iconoBúsqueda" onclick="mostrar_buscador()"></i>
         </div>
     </div>
 </header>
 <main>
-    <div id="barraBusqueda" onclick="buscador_interno()">
-        <input type="search" id="inputBusqueda" placeholder="¿A dónde queres viajar?" onkeyup="buscador_interno()" pattern="[0-9]{5,7}" title="Ingrese una ciudad disponible, por ejemplo Roma" required>
+    <div id="barraBúsqueda" onclick="buscador_interno()">
+        <input type="search" id="inputBúsqueda" placeholder="¿A dónde queres viajar?" onkeyup="buscador_interno()"
+               pattern="[0-9]{5,7}" title="Ingrese una ciudad disponible, por ejemplo Roma" required>
     </div>
 
-    <ul id="cajaBusqueda">
-        <li><a href="Cancun.html"><i class="busqueda"></i>Cancun</a></li>
-        <li><a href="Dubai.html"><i class="busqueda"></i>Dubai</a></li>
-        <li><a href="Londres.html"><i class="busqueda"></i>Londres</a></li>
-        <li><a href="Madrid.html"><i class="busqueda"></i>Madrid</a></li>
-        <li><a href="Munich.html"><i class="busqueda"></i>Munich</a></li>
-        <li><a href="Mykonos.html"><i class="busqueda"></i>Mykonos</a></li>
-        <li><a href="NewYork.html"><i class="busqueda"></i>New York</a></li>
-        <li><a href="Paris.html"><i class="busqueda"></i>Paris</a></li>
-        <li><a href="Roma.html"><i class="busqueda"></i>Roma</a></li>
-        <li><a href="Tokyo.html"><i class="busqueda"></i>Tokyo</a></li>
+    <ul id="cajaBúsqueda">
+        <li><a href="Cancún.html"><i class="búsqueda"></i>Cancún</a></li>
+        <li><a href="Dubai.html"><i class="búsqueda"></i>Dubai</a></li>
+        <li><a href="Londres.html"><i class="búsqueda"></i>Londres</a></li>
+        <li><a href="Madrid.html"><i class="búsqueda"></i>Madrid</a></li>
+        <li><a href="Munich.html"><i class="búsqueda"></i>Munich</a></li>
+        <li><a href="Mykonos.html"><i class="búsqueda"></i>Mykonos</a></li>
+        <li><a href="NewYork.html"><i class="búsqueda"></i>New York</a></li>
+        <li><a href="París.html"><i class="búsqueda"></i>Paris</a></li>
+        <li><a href="Roma.html"><i class="búsqueda"></i>Roma</a></li>
+        <li><a href="Tokyo.html"><i class="búsqueda"></i>Tokyo</a></li>
     </ul>
 
-    <div id="contenedorBusqueda" onclick="ocultar_buscador()"></div>
+    <div id="contenedorBúsqueda" onclick="ocultar_buscador()"></div>
 
-<div class="contenedorTodo" id="moverContenido">
-    
-    <div class="contenedor-botones">
-        <a  href="test.html" target="self"> <button class="boton-uno"> <span><strong> PROBA NUESTRO TEST </strong></span> </button></a>
-        <a  href="destinos.html" target="_self"> <button class="boton-dos"><span> <strong>MIRA LOS DESTINOS DISPONIBLES </strong> </span>  </button> </a>
-    </div>
+    <div class="contenedorTodo" id="moverContenido">
 
-    <div class="divCanvas">
-        <canvas id="myCanvas" class="canvas" height="500" width="1500">
-        </canvas>
-    </div>
-    <br>
-    <hr class="lineaPunteada">
-    <div class="tituloVideosYoutube">
-        <h2>Podes viajar a cualquiera de estos hermosos destinos</h2>
-    </div>
-
-    <div class="videosyoutube">
-        <div class="videoyou1">
-            <iframe src="https://www.youtube.com/embed/DLezOMaj3ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="contenedor-botones">
+            <a href="test.html" target="self">
+                <button class="boton-uno"><span><strong> PROBÁ NUESTRO TEST </strong></span></button>
+            </a>
+            <a href="destinos.html" target="_self">
+                <button class="boton-dos"><span> <strong>MIRÁ LOS DESTINOS DISPONIBLES </strong> </span></button>
+            </a>
         </div>
-        <div class="videoyou2">
-            <iframe src="https://www.youtube.com/embed/NBs0RnKnNTE?list=PLzrSDlTJSNWDe48XV_6AIhuFxL6P-ySdi&t=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
 
-    <hr class="lineaPunteada"/>
-</div>
+        <div class="divCanvas">
+            <canvas id="myCanvas" class="canvas" height="500" width="1500">
+            </canvas>
+        </div>
+        <br>
+        <hr class="líneaPunteada">
+        <div class="títuloVideosYoutube">
+            <h2>Algunos destinos para inspirar TU VIAJE</h2>
+        </div>
+
+        <div class="videosyoutube">
+            <div class="videoyou1">
+                <iframe src="https://www.youtube.com/embed/DLezOMaj3ME" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="videoyou2">
+                <iframe src="https://www.youtube.com/embed/NBs0RnKnNTE?list=PLzrSDlTJSNWDe48XV_6AIhuFxL6P-ySdi&t=14"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="videoyou3">
+                <iframe src="https://www.youtube.com/embed/UfEiKK-iX70" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="videoyou4">
+                <iframe src="https://www.youtube.com/embed/po2T3OX5WfE" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <hr class="líneaPunteada"/>
+    </div>
 </main>
 
 <footer>
     <div class="footer">
-      <h3>Contacto:</h3>
-      <ul>
-        <li><a href="instagram.com/orne.alessandroni"><span> Orne Alessandroni</span></a></li>
-        <li><a href="instagram.com/juli_soriaa_"><span> Juli Soria</span></a></li>
-      </ul>
+        <h3>Owners:</h3>
+        <ul>
+            <li><span> Orne Alessandroni</span></li>
+            <li><span> Juli Soria</span></li>
+        </ul>
     </div>
 </footer>
-</div>
 </body>
 </html>
+
