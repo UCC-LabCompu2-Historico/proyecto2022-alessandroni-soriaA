@@ -97,7 +97,8 @@ body {
 }
 .volver{
     background: #74a6d4; 
-    margin: 10px 42% 25px; 
+    margin: 15px 42% 25px;
+    align-items: center;
     overflow: hidden; 
     padding: 0px 60px; 
     border-radius: 0px 50px 0px 50px; 
