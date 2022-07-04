@@ -2,41 +2,50 @@
     padding: 0px;
     margin: 0px;
 }
+
 body {
     background-color: #dbeeff;
 }
-.logo{
+
+.logo {
     z-index: 1000;
 }
-.div1{
+
+.div1 {
     width: 100%;
     height: 100%;
-} /* Imagen del membrete LISTO*/
-.subtituloDePagina{
-    font-family: Rockwell; 
-    vertical-align: 100%; 
-    color: rgb(238, 238, 238); 
+}
+
+/* Imagen del membrete LISTO*/
+.subtituloDePagina {
+    font-family: Rockwell;
+    vertical-align: 100%;
+    color: rgb(238, 238, 238);
     text-shadow: 1px 1px 30px rgb(61, 59, 59), 2px 5px 2px rgb(177, 176, 176);
     font-size: 250%;
     text-align: center;
     z-index: 100;
 }
-.tituloDePagina{
+
+.tituloDePagina {
     font-family: Rockwell;
-    vertical-align: 100%; 
-    color: rgb(238, 238, 238); 
+    vertical-align: 100%;
+    color: rgb(238, 238, 238);
     text-shadow: 1px 1px 30px rgb(78, 76, 76), 2px 5px 2px rgb(177, 176, 176);
     font-size: 600%;
     text-align: center;
     z-index: 100;
-} /* Título de la página LISTO*/
-.slider li{
+}
+
+/* Título de la página LISTO*/
+.slider li {
     position: absolute;
     background-position: center center;
     animation: slider 10s linear infinite;
     transition: all 200ms ease-out;
 }
-.slider .tokyo1{
+
+.slider .tokyo1 {
     z-index: -1;
     width: 100%;
     height: 50%;
@@ -44,7 +53,8 @@ body {
     animation-delay: 10s;
     background-size: cover;
 }
-.slider .tokyo2{
+
+.slider .tokyo2 {
     z-index: -2;
     width: 100%;
     height: 50%;
@@ -52,7 +62,8 @@ body {
     animation-delay: 20s;
     background-size: cover;
 }
-.slider .tokyo3{
+
+.slider .tokyo3 {
     z-index: -3;
     width: 100%;
     height: 50%;
@@ -60,7 +71,8 @@ body {
     animation-delay: 30s;
     background-size: cover;
 }
-.slider .tokyo4{
+
+.slider .tokyo4 {
     z-index: -4;
     width: 100%;
     height: 50%;
@@ -68,111 +80,137 @@ body {
     animation-delay: 40s;
     background-size: cover;
 }
-@keyframes slider{
-    0% {opacity: 0; }
-    10% {opacity: 1; animation-timing-function: ease-in; }
-    25% {opacity: 1;transform: scale(1); transition: all 200ms ease-out;;}
-    50% {opacity: 0;transform: scale(1); animation-delay: 1.5s;}
-    100% {opacity: 0;}
+
+@keyframes slider {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 200ms ease-out;;
+    }
+    50% {
+        opacity: 0;
+        transform: scale(1);
+        animation-delay: 1.5s;
+    }
+    100% {
+        opacity: 0;
+    }
 }
-.titulo { 
-    font-family: Rockwell; 
-    color: #ffffff; 
-    font-size: 30px; 
+
+.titulo {
+    font-family: Rockwell;
+    color: #ffffff;
+    font-size: 30px;
     text-align: center;
-    background: #ff94df; 
-    margin: 0 0 25px; 
-    overflow: hidden; 
-    padding: 10px; 
-    border-radius: 35px 50px 35px 50px; 
-    -moz-border-radius: 35px 35px 35px 35px; 
-    -webkit-border-radius: 35px 35px 35px 35px; 
+    background: #ff94df;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 35px 50px 35px 50px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
     text-shadow: 2px 2px 10px rgb(194, 194, 194);
-    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
 }
-.lineaPunteada{
+
+.lineaPunteada {
     border-top: 1px dashed grey;
 }
-.volver{
-    background: #74a6d4; 
-    margin: 10px 42% 25px; 
-    overflow: hidden; 
-    padding: 0px 60px; 
-    border-radius: 0px 50px 0px 50px; 
-    -moz-border-radius: 0px 35px 0px 35px; 
-    -webkit-border-radius: 10px 10px 10px 10px; 
+
+.volver {
+    background: #74a6d4;
+    margin: 10px 42% 25px;
+    overflow: hidden;
+    padding: 0px 60px;
+    border-radius: 0px 50px 0px 50px;
+    -moz-border-radius: 0px 35px 0px 35px;
+    -webkit-border-radius: 10px 10px 10px 10px;
     text-shadow: 2px 2px 10px rgb(194, 194, 194);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.50);
 }
-.volver h1{
-    font-family: Rockwell; 
-    color: #ffffff; 
-    font-size: 150%; 
+
+.volver h1 {
+    font-family: Rockwell;
+    color: #ffffff;
+    font-size: 150%;
     text-align: center;
 }
-.divisionImagen{
+
+.divisionImagen {
     display: inline-block;
-    height:320px;
-    width:575px;
-} /* division de cada imagen LISTO*/
+    height: 320px;
+    width: 575px;
+}
 
-.imagen{
-    height:320px;
-    width:575px;
-    size-adjust:inherit;
-} 
+/* division de cada imagen LISTO*/
 
-.footer{
+.imagen {
+    height: 320px;
+    width: 575px;
+    size-adjust: inherit;
+}
+
+.footer {
     font-family: Rockwell;
     text-align: left;
     font-size: 70%;
 }
-.footer span{
+
+.footer span {
     display: inline-block;
 }
-.texto{
-    background: #d9fccc; 
-    margin: 0 10% 25px; 
-    overflow: hidden; 
-    padding: 10px 60px; 
-    border-radius: 0px 50px 0px 50px; 
-    -moz-border-radius: 0px 35px 0px 35px; 
-    -webkit-border-radius: 10px 10px 10px 10px; 
+
+.texto {
+    background: #d9fccc;
+    margin: 0 10% 25px;
+    overflow: hidden;
+    padding: 10px 60px;
+    border-radius: 0px 50px 0px 50px;
+    -moz-border-radius: 0px 35px 0px 35px;
+    -webkit-border-radius: 10px 10px 10px 10px;
     text-shadow: 2px 2px 10px rgb(194, 194, 194);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.50);
 }
 
-.texto p{
-    font-family: Rockwell; 
-    color: #000000; 
-    font-size: 120%; 
+.texto p {
+    font-family: Rockwell;
+    color: #000000;
+    font-size: 120%;
     text-align: justify;
 }
 
-.Hoteles{
-    display: inline-block;
-    background: #a8da9c; 
-    overflow: hidden; 
-    padding: 0px 60px; 
-    border-radius: 0px 50px 0px 50px; 
-    -moz-border-radius: 0px 35px 0px 35px; 
-    -webkit-border-radius: 10px 10px 10px 10px; 
-    text-shadow: 2px 2px 10px rgb(194, 194, 194);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
-}
-
-.vuelos{
+.Hoteles {
     display: inline-block;
     background: #a8da9c;
-    overflow: hidden; 
-    padding: 0px 60px; 
-    border-radius: 0px 50px 0px 50px; 
-    -moz-border-radius: 0px 35px 0px 35px; 
-    -webkit-border-radius: 10px 10px 10px 10px; 
+    overflow: hidden;
+    padding: 0px 60px;
+    border-radius: 0px 50px 0px 50px;
+    -moz-border-radius: 0px 35px 0px 35px;
+    -webkit-border-radius: 10px 10px 10px 10px;
     text-shadow: 2px 2px 10px rgb(194, 194, 194);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.50);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.50);
 }
-.recomendaciones{
+
+.vuelos {
+    display: inline-block;
+    background: #a8da9c;
+    overflow: hidden;
+    padding: 0px 60px;
+    border-radius: 0px 50px 0px 50px;
+    -moz-border-radius: 0px 35px 0px 35px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    text-shadow: 2px 2px 10px rgb(194, 194, 194);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.50);
+}
+
+.recomendaciones {
     margin-left: 35%;
     margin-bottom: 5%;
 }
