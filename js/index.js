@@ -43,9 +43,8 @@ function ocultar_buscador() {
 
 /*
 * @method Filtrado de búsqueda
-* @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
-* @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
-* @return Valor que retorna
+* @param {string} Filter -- recibe inputBúsqueda.value (Valor seleccionado en el input)
+* @param {string} li -- recibe cada elemento (país) -- variable de comparación
 */
 
 document.getElementById("inputBúsqueda").addEventListener("keyup", buscador_interno);
