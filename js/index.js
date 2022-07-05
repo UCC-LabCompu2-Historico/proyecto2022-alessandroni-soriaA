@@ -41,8 +41,8 @@ function ocultar_buscador() {
 
 }
 
-/* Filtrado de búsqueda
-* @method Nombre de la función
+/*
+* @method Filtrado de búsqueda
 * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
 * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
 * @return Valor que retorna
@@ -75,7 +75,10 @@ function buscador_interno() {
     }
 }
 
-
+/* Función para animar el canvas (movimiento de izquiera a derecha)
+* @method animarAvion()
+* @param no hay parámetros. Se crean variables globales
+*/
 function animarAvión() {
 
     var canvas = document.getElementById("myCanvas");
