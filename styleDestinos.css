@@ -1,7 +1,9 @@
-
-body {
-    background-color: hsl(214, 100%, 93%);
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
@@ -146,22 +148,6 @@ h1 {
 }
 
 /* Linea membrete LISTO*/
-.tituloDePagina {
-    font-family: Rockwell;
-    display: inline-block;
-    vertical-align: 100%;
-    color: rgb(28, 49, 68);
-    text-shadow: 1px 1px 30px rgb(255, 255, 255), 2px 5px 2px rgb(177, 176, 176);
-}
-
-/* Título de la página LISTO*/
-.tituloDePagina{
-    font-family: Rockwell;
-    display: inline-block; 
-    vertical-align: 100%; 
-    color: rgb(28, 49, 68); 
-    text-shadow: 1px 1px 30px rgb(255, 255, 255), 2px 5px 2px rgb(177, 176, 176);
-} /* Título de la página LISTO*/
 
 .divisionImagen{
     display: inline-block;
