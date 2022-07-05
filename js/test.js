@@ -38,7 +38,6 @@ const preguntas = [
 * @method mostrarTest()
 */
 
-
 function mostrarTest() {
     const preguntasYrespuestas = [];
 
