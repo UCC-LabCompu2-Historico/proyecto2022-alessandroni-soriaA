@@ -1,3 +1,5 @@
+
+
 const fila = document.querySelector(".contenedor-carrusel");
 const destinos = document.querySelectorAll(".destinos");
 
