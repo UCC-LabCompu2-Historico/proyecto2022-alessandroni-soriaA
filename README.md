@@ -3,7 +3,7 @@ SIGHTSEEING THE WORLD W US!
 Nuestra página ayuda a los viajeros a decidir el destino y les sugiere distintas alternativas dependiendo de sus intereses.
 Lo hicimos en html5 y css3. Nuestros nombres son Ornella Alessandroni y Julieta Soria. El título es "Travel with us"
 
-<a href= "https://ucc-labcompu2.github.io/proyecto2022-alessandroni-soriaA/"> Link a página<a>
+<a href= "https://ucc-labcompu2-Historico.github.io/proyecto2022-alessandroni-soriaA/"> Link a página<a>
 
 Dentro de nuestra página principal podrán encontrar videos de viajes, información sobre nosotras y dos opciones para continuar, ver todos los destinos disponibles o nuestro test para que nosotras te sugiramos un destino acorde a tus gustos.
 
